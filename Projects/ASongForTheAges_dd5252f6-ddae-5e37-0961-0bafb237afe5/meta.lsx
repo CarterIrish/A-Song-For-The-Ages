@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="8" revision="0" build="500"/>
+    <region id="MetaData">
+        <node id="root">
+            <attribute id="GameProject" type="LSString" value=""/>
+            <attribute id="Module" type="LSString" value="dd5252f6-ddae-5e37-0961-0bafb237afe5"/>
+            <attribute id="Name" type="LSString" value="ASongForTheAges"/>
+            <attribute id="UUID" type="LSString" value="bc70ecf8-9c13-8897-d81a-041aaaa2b274"/>
+            <attribute id="UpdatedDependencies" type="bool" value="true"/>
+            <children>
+                <node id="Categories"/>
+            </children>
+        </node>
+    </region>
+</save>
