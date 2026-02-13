@@ -27,7 +27,7 @@ if (-not (Test-Path $BG3DataPath)) {
 Write-Host "BG3 Data Path: $BG3DataPath" -ForegroundColor Green
 
 Write-Host "`nAuto-detecting mod UUID..." -ForegroundColor Yellow
-$modFolders = Get-Children -Path "Mods" -Directory | Where-Object {
+$modFolders = Get-ChildItem -Path "Mods" -Directory | Where-Object {
     $_.Name -match ".*_[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}"
 }
 
