@@ -7,11 +7,19 @@ Write-Host $BG3DataPath
 
 $ErrorActionPreference = "Stop"
 
-Write-Host "`n=== BG3 Mod Junctio Setup ===" -ForegroundColor Cyan
+# Check for Administrator privileges (required for junctions)
+$isAdmin = ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)
+if (-not $isAdmin) {
+    Write-Host "ERROR: This script requires Administrator privileges to create junctions." -ForegroundColor Red
+    Write-Host "Please right-click PowerShell and select 'Run as Administrator'." -ForegroundColor Yellow
+    exit 1
+}
+
+Write-Host "`n=== BG3 Mod Junction Setup ===" -ForegroundColor Cyan
 Write-Host "This script will setup your Git repo to work with BG3 Toolkit `n" -ForegroundColor Gray
 
 if (-not (Test-Path $BG3DataPath)) {
-    Write-Host "ERROR: BG3 Data path not found: $BG3DataPath" - -ForegroundColor Red
+    Write-Host "ERROR: BG3 Data path not found: $BG3DataPath" -ForegroundColor Red
     Write-Host "Please verify your BG3 install path and try again." -ForegroundColor Yellow
     exit 1
 }
@@ -50,18 +58,18 @@ catch {
 Write-Host "`n[Step 2/3] Removing real files from Git Clone..." -ForegroundColor Yellow
 try {
     Write-Host "    - Removing Mods Folder..." -ForegroundColor Gray
-    Remove-Item "Mods\$UUID" -Recurse -Force
+    Remove-Item "Mods\$ModUUID" -Recurse -Force -ErrorAction SilentlyContinue
 
     Write-Host "    - Removing Editor Folder..." -ForegroundColor Gray
-    Remove-Item "Editor\Mods\$UUID" -Recurse -Force
+    Remove-Item "Editor\Mods\$ModUUID" -Recurse -Force -ErrorAction SilentlyContinue
 
     Write-Host "    - Removing Projects Folder..." -ForegroundColor Gray
-    Remove-Item "Projects\$UUID" -Recurse -Force
+    Remove-Item "Projects\$ModUUID" -Recurse -Force -ErrorAction SilentlyContinue
 
     Write-Host "    Folders removed successfully!" -ForegroundColor Green
 }
 catch {
-    Write-Host "ERROR: Failed to remove folders: $_" -ForgroundColor Red
+    Write-Host "ERROR: Failed to remove folders: $_" -ForegroundColor Red
     Write-Host "You may need to run PowerShell as Administrator." -ForegroundColor Yellow
     exit 1
 }
@@ -78,7 +86,7 @@ try {
     $Result = cmd /c mklink /J "Editor\Mods\$ModUUID" "$BG3DataPath\Editor\Mods\$ModUUID" 2>&1
     if ($LASTEXITCODE -ne 0) { throw $Result }
 
-    Write-Host "    - Creatign Projects junction..." -ForegroundColor Gray
+    Write-Host "    - Creating Projects junction..." -ForegroundColor Gray
     $Result = cmd /c mklink /J "Projects\$ModUUID" "$BG3DataPath\Projects\$ModUUID" 2>&1
     if ($LASTEXITCODE -ne 0) { throw $Result }
 
@@ -90,14 +98,14 @@ catch {
     exit 1
 }
 
-# Cleanup: Run verification to ensure all steps were successfull
+# Cleanup: Run verification to ensure all steps were successful
 Write-Host "`n=== Verifying Setup ===" -ForegroundColor Cyan
-$modsJunction = Get-Item "Mods\$ModUUID"\
-$editorJunction = Get-Item "Editor\Mods\$ModUUID"\
-$projectsJunction = Get-Item "Projects\$ModUUID"\
+$modsJunction = Get-Item "Mods\$ModUUID"
+$editorJunction = Get-Item "Editor\Mods\$ModUUID"
+$projectsJunction = Get-Item "Projects\$ModUUID"
 
 if ($modsJunction.LinkType -eq "Junction" -and $editorJunction.LinkType -eq "Junction" -and $projectsJunction.LinkType -eq "Junction") {
-    Write-Host "`n Success! All junctions were created properly" - -ForgroundColor Green
+    Write-Host "`nSuccess! All junctions were created properly" -ForegroundColor Green
     Write-Host "`nJunction Details:" -ForegroundColor Gray
     Write-Host "  Mods     -> $($modsJunction.Target)" -ForegroundColor Gray
     Write-Host "  Editor   -> $($editorJunction.Target)" -ForegroundColor Gray
