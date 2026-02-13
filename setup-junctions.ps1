@@ -26,7 +26,26 @@ if (-not (Test-Path $BG3DataPath)) {
 
 Write-Host "BG3 Data Path: $BG3DataPath" -ForegroundColor Green
 
-$ModUUID = "ASongForTheAges_dd5252f6-ddae-5e37-0961-0bafb237afe5"
+Write-Host "`nAuto-detecting mod UUID..." -ForegroundColor Yellow
+$modFolders = Get-Children -Path "Mods" -Directory | Where-Object {
+    $_.Name -match ".*_[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}"
+}
+
+if($modFolders.Count -eq 0)
+{
+    Write-Host "ERROR: No mod Folder found in Mods/ Directory" -ForegroundColor Red
+    Write-Host "Expected format: ModName_xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" -ForegroundColor Yellow
+}
+
+if($modFolders.count -gt 1)
+{
+    Write-Host "ERROR: Multiple mod folders found. Please Specify which mod:" -ForegroundColor Red
+    $modFolders | ForEach-Object {Write-Host "  -$($_.Name)" -ForegroundColor Yellow}
+    exit 1
+}
+
+$ModUUID = $modFolders[0].Name
+Write-Host "    Detected: $ModUUID" -ForegroundColor Green
 
 # Step 1 is to copy the files into BG3 Data folder
 Write-Host "`n[Step 1/3] Copying Mod Files to BG3 data folder..." -ForegroundColor Yellow
