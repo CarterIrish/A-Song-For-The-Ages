@@ -47,3 +47,20 @@ catch {
 }
 
 # Step 2 is to remove the real files from git clone
+try {
+    Write-Host "    - Removing Mods Folder..." -ForegroundColor Gray
+    Remove-Item "Mods\$UUID" -Recurse -Force
+
+    Write-Host "    - Removing Editor Folder..." -ForegroundColor Gray
+    Remove-Item "Editor\Mods\$UUID" -Recurse -Force
+
+    Write-Host "    - Removing Projects Folder..." -ForegroundColor Gray
+    Remove-Item "Projects\$UUID" -Recurse -Force
+
+    Write-Host "    Folders removed successfully!" -ForegroundColor Green
+}
+catch {
+    Write-Host "ERROR: Failed to remove folders: $_" -ForgroundColor Red
+    Write-Host "You may need to run PowerShell as Administrator." -ForegroundColor Yellow
+    exit 1
+}
