@@ -1,5 +1,5 @@
 param(
-    [Parameter(Mandatory=$true, HelpMessage="Please provide a file path to the BG3 data directory.")]
+    [Parameter(Mandatory = $true, HelpMessage = "Please provide a file path to the BG3 data directory.")]
     [string]$BG3DataPath
 )
 
@@ -10,8 +10,7 @@ $ErrorActionPreference = "Stop"
 Write-Host "`n=== BG3 Mod Junctio Setup ===" -ForegroundColor Cyan
 Write-Host "This script will setup your Git repo to work with BG3 Toolkit `n" -ForegroundColor Gray
 
-if(-not (Test-Path $BG3DataPath))
-{
+if (-not (Test-Path $BG3DataPath)) {
     Write-Host "ERROR: BG3 Data path not found: $BG3DataPath" - -ForegroundColor Red
     Write-Host "Please verify your BG3 install path and try again." -ForegroundColor Yellow
     exit 1
@@ -73,15 +72,15 @@ Write-Host "`n[Step 3/3] Creating Junctions..." -ForegroundColor Yellow
 try {
     Write-Host "    - Creating Mods junction..." -ForegroundColor Gray
     $Result = cmd /c mklink /J "Mods\$ModUUID" "$BG3DataPath\Mods\$ModUUID" 2>&1
-    if($LASTEXITCODE -ne 0){throw $Result}
+    if ($LASTEXITCODE -ne 0) { throw $Result }
 
     Write-Host "    - Creating Editor junction..." -ForegroundColor Gray
     $Result = cmd /c mklink /J "Editor\Mods\$ModUUID" "$BG3DataPath\Editor\Mods\$ModUUID" 2>&1
-    if($LASTEXITCODE -ne 0){throw $Result}
+    if ($LASTEXITCODE -ne 0) { throw $Result }
 
     Write-Host "    - Creatign Projects junction..." -ForegroundColor Gray
     $Result = cmd /c mklink /J "Projects\$ModUUID" "$BG3DataPath\Projects\$ModUUID" 2>&1
-    if($LASTEXITCODE -ne 0){throw $Result}
+    if ($LASTEXITCODE -ne 0) { throw $Result }
 
     Write-Host "    Junctions created successfully!" -ForegroundColor Green
 }
@@ -92,3 +91,27 @@ catch {
 }
 
 # Cleanup: Run verification to ensure all steps were successfull
+Write-Host "`n=== Verifying Setup ===" -ForegroundColor Cyan
+$modsJunction = Get-Item "Mods\$ModUUID"\
+$editorJunction = Get-Item "Editor\Mods\$ModUUID"\
+$projectsJunction = Get-Item "Projects\$ModUUID"\
+
+if ($modsJunction.LinkType -eq "Junction" -and $editorJunction.LinkType -eq "Junction" -and $projectsJunction.LinkType -eq "Junction") {
+    Write-Host "`n Success! All junctions were created properly" - -ForgroundColor Green
+    Write-Host "`nJunction Details:" -ForegroundColor Gray
+    Write-Host "  Mods     -> $($modsJunction.Target)" -ForegroundColor Gray
+    Write-Host "  Editor   -> $($editorJunction.Target)" -ForegroundColor Gray
+    Write-Host "  Projects -> $($projectsJunction.Target)" -ForegroundColor Gray
+
+    Write-Host "`nNext Steps:" -ForegroundColor Cyan
+    Write-Host "  1. Open BG3 Toolkit - you should see 'ASongForTheAges' in your mod list" -ForegroundColor White
+    Write-Host "  2. Make changes in the Toolkit" -ForegroundColor White
+    Write-Host "  3. Use 'git status' to see your changes" -ForegroundColor White
+    Write-Host "  4. Commit and push as normal!" -ForegroundColor White
+}
+else {
+    Write-Host "`nWARNING: Junctions may not be setup correctly." -ForegroundColor Red
+    Write-Host "Please verify manually with: Get-Item 'Mods\$ModUUID' | Select-Object LinkType, Target" -ForegroundColor Yellow
+}
+
+Write-Host ""
