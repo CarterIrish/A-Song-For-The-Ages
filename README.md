@@ -1,4 +1,4 @@
-ASongForTheAges for Baldurs Gate 3
+A Song For The Ages for Baldurs Gate 3
 =======
 
 # Features:
