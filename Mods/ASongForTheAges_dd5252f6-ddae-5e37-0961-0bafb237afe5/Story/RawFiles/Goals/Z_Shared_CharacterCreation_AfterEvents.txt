@@ -1,0 +1,33 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+// Events to handle between the end of character creation and before the next level starts
+KBSECTION
+//REGION Prevent teleport race in case of auto-selected origin
+// In case a LevelLoaded event arrives between starting and ending
+// the teleport of the randomly selected origin to the dummy, cancel
+// the teleport because the origin was a player already at this time
+// and hence it will automatically be teleported to the current level
+// already (and the dummy may no longer be a player and be left behind
+// in the previous level)
+IF
+LevelLoaded(_)
+AND
+DB_ChosenOriginWaitingForTeleport(_Player)
+THEN
+NOT DB_ChosenOriginWaitingForTeleport(_Player);
+PurgeOsirisQueue(_Player);
+//END_REGION
+
+//REGION Complete
+IF
+LevelLoaded(_Level)
+AND
+IsGameLevel(_Level, 1)
+THEN
+GoalCompleted;
+//END_REGION
+EXITSECTION
+
+ENDEXITSECTION
+ParentTargetEdge "Z_Shared_Campaign_At_End"

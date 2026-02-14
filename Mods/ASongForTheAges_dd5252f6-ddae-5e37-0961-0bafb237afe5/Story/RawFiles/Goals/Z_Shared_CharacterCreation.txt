@@ -1,0 +1,200 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+// Configuration: define the following in a top-level goal of your mod (or variants)
+
+// * Information on movie to play when transitioning from character creation to startup level configured in mod settings (can be empty string)
+DB_CharacterCreationTransitionInfo("TestLevel", "GUS_IntroCinematic");
+// * Default:
+//     None
+
+// * Dummy characters assigned to players while they are in the character creation level (normally no need to define/change)
+//     Example: DB_CharacterCreationDummy((CHARACTERGUID)S_GLO_CharacterCreationDummy_001_e2badbf0-159a-4ef5-9e73-7bbeb3d1015a);
+// * Default if not defined when this goal initialises (these characters are from SYS_Character_Creation_A):
+//     DB_CharacterCreationDummy((CHARACTERGUID)S_GLO_CharacterCreationDummy_001_e2badbf0-159a-4ef5-9e73-7bbeb3d1015a);
+//     DB_CharacterCreationDummy((CHARACTERGUID)S_GLO_CharacterCreationDummy_002_aa772968-b5e0-4441-8d86-2d0506b4aab5);
+//     DB_CharacterCreationDummy((CHARACTERGUID)S_GLO_CharacterCreationDummy_003_81c48711-d7cc-4a3d-9e49-665eb915c15c);
+//     DB_CharacterCreationDummy((CHARACTERGUID)S_GLO_CharacterCreationDummy_004_6bff5419-5a9e-4839-acd4-cac4f6e41bd7);
+
+// * Origins, i.e., predefined characters that a player can choose from during character creation
+//     DB_Origins((CHARACTER)CHARACTERGUID_S_GLO_Fane_8d93bf2c-94f5-4d61-9aa3-19aa24fc3540);
+//   Default:
+//     None. Note: if you nor any mod you depend on defines any, then you must overload PROC_SelectRandomStartOrigin
+//       and make it assign a character to a player to enable testing in the editor (unless you define a character
+//       with the IsPlayer flag set to true in the sidebar).
+
+PROC_Shared_CharacterCreation_Init();
+
+NOT DB_CharacterCreationTransitionInfo("","");
+KBSECTION
+//REGION Reserve player data for all origins
+PROC
+PROC_Shared_CharacterCreation_Init()
+AND
+DB_Origins(_Player)
+THEN
+InitializePlayerData(_Player);
+//END_REGION
+
+//REGION Skipping CC - completely forget about CC
+IF
+DB_CharacterCreationStarted(0)
+AND
+DB_CharacterCreationDummy(_Dummy)
+AND
+DB_CurrentLevel(_Level)
+AND
+NOT DB_PredefinePartyPreset_Loaded(_)
+AND
+// To prevent this from triggering if you start game mode in a CC level in the editor,
+// because __AAA_CharacterCreatin_At_Start also only triggers/completes when it's a
+// game level (and it needs the dummies too)
+IsGameLevel(_Level,1)
+THEN
+PROC_RemoveCCDummy(_Dummy);
+
+IF
+DB_CharacterCreationStarted(0)
+AND
+DB_CurrentLevel(_Level)
+AND
+// To keep PROC_RemoveCCDummy available until the above triggers
+IsGameLevel(_Level,1)
+THEN
+GoalCompleted;
+PROC_Shared_CharacterCreationFinished();
+
+PROC
+PROC_Shared_CharacterCreationFinished()
+THEN
+DB_NOOP(1);
+//END_REGION
+
+//REGION Initialize dummies
+// Fill dummies, we still need them to players be able to connect
+// and we have to make them NPCs and put them off-stage at the end of CC
+PROC
+PROC_Shared_CharacterCreation_Init()
+AND
+NOT DB_CharacterCreationDummy(_)
+THEN
+DB_CharacterCreationDummy((CHARACTER)S_GLO_CharacterCreationDummy_001_e2badbf0-159a-4ef5-9e73-7bbeb3d1015a);
+DB_CharacterCreationDummy((CHARACTER)S_GLO_CharacterCreationDummy_002_aa772968-b5e0-4441-8d86-2d0506b4aab5);
+DB_CharacterCreationDummy((CHARACTER)S_GLO_CharacterCreationDummy_003_81c48711-d7cc-4a3d-9e49-665eb915c15c);
+DB_CharacterCreationDummy((CHARACTER)S_GLO_CharacterCreationDummy_004_6bff5419-5a9e-4839-acd4-cac4f6e41bd7);
+
+// All dummies are players -> automatically teleported by code to
+// the lobby levels.
+//END_REGION
+
+// Start CC session for all currently connected players
+IF
+LevelLoaded(_Level)
+AND
+IsCharacterCreationLevel(_Level, 1)
+THEN
+StartCharacterCreation();
+
+//REGION Started game mode in a level inside the editor
+// Skip CC
+PROC
+PROC_Z_Shared_GameModeStarted("Campaign", 1, (INTEGER)_)
+THEN
+DB_CharacterCreationStarted(0);
+//END_REGION
+
+//REGION Helper for clearing dummy
+PROC
+PROC_RemoveCCDummy((CHARACTER)_Dummy)
+THEN
+MakeNPC(_Dummy);
+SetOnStage(_Dummy,0);
+//END_REGION
+
+//REGION Teleport players to first level after character creation
+IF
+TextEvent("noteleportaftercc")
+THEN
+DB_CharacterCreationNoTeleport(1);
+
+PROC
+PROC_GLO_CharacterCreationTeleportWithOptionalMovie((CHARACTER)_NewChar,(STRING)_LevelName,(STRING)_Movie)
+AND
+NOT DB_CharacterCreationNoTeleport(1)
+THEN
+TeleportPartiesToLevelWithMovie(_LevelName,"",_Movie);
+
+PROC
+PROC_MovePartyToStart((CHARACTER)_NewChar,(STRING)_LevelName,(STRING)_Movie)
+AND
+NOT DB_CharacterCreationNoTeleport(1)
+THEN
+NOT DB_AlreadyTeleported(1);
+
+PROC
+PROC_MovePartyToStart((CHARACTER)_NewChar,(STRING)_LevelName,(STRING)_Movie)
+AND
+NOT DB_CharacterCreationNoTeleport(1)
+AND
+DB_TeleportedToStartCharacters(_Char)
+AND
+IsInPartyWith(_Char,_NewChar,1)
+THEN
+DB_AlreadyTeleported(1);
+
+PROC
+PROC_MovePartyToStart((CHARACTER)_NewChar,(STRING)_LevelName,(STRING)_Movie)
+AND
+NOT DB_CharacterCreationNoTeleport(1)
+AND
+NOT DB_AlreadyTeleported(1)
+THEN
+DB_TeleportedToStartCharacters(_NewChar);
+PROC_GLO_CharacterCreationTeleportWithOptionalMovie(_NewChar,_LevelName,_Movie);
+//END_REGION
+
+//REGION CC started/finished normally
+IF
+CharacterCreationStarted()
+THEN
+DB_CharacterCreationStarted(1);
+
+IF
+CharacterSelectedForUser(_Char, _UserID)
+THEN
+NOT DB_DoNotFace(_Char);
+SetTag(_Char, (TAG)AVATAR_306b9b05-1057-4770-aa17-01af21acd650);
+DB_Players(_Char);
+PROC_CheckPartyFull();
+
+IF
+CharacterCreationFinished()
+AND
+DB_CharacterCreationDummy(_Dummy)
+THEN
+PROC_RemoveCCDummy(_Dummy);
+
+IF
+CharacterCreationFinished()
+AND
+GetActiveModStartupLevel(_FirstLevel)
+AND
+DB_CharacterCreationTransitionInfo(_FirstLevel,(STRING)_Movie)
+AND
+DB_Players(_Char)
+THEN
+PROC_MovePartyToStart(_Char,_FirstLevel,_Movie);
+
+IF
+CharacterCreationFinished()
+THEN
+DB_GLO_PlayerCharactersSetup(1);
+PROC_PlayersSelected("Initial");
+NOT DB_GLO_PlayerCharactersSetup(1);
+GoalCompleted;
+PROC_Shared_CharacterCreationFinished();
+//END_REGION
+EXITSECTION
+
+ENDEXITSECTION
+ParentTargetEdge "Z_Shared_Campaign_At_End"

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="8" revision="0" build="500"/>
+    <region id="MetaData">
+        <node id="root">
+            <attribute id="ID" type="guid" value="7ecf85f1-5c9c-8162-395e-2993ad84b2cc"/>
+            <attribute id="LayerColor" type="int32" value="-5808329"/>
+            <attribute id="Name" type="LSString" value="Terrains"/>
+        </node>
+    </region>
+</save>
