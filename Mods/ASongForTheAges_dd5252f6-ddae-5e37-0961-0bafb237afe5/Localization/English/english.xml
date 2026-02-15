@@ -8,9 +8,13 @@
   <content contentuid="h5a3f6cd2gb606g93d9gac76g6fe0a6688b03" version="6">What do you want?</content>
   <content contentuid="h8ccf0983gf080g8afegf331g3008a1a36c2e" version="6">&lt;b&gt;Go away.&lt;/b&gt;</content>
   <content contentuid="hc1f2fbb7g991eg1441ga9eege91a18596c79" version="6">I lost my lute...</content>
-  <content contentuid="h58ba8122g74d9g7cfdg3c1bg65257c695a9b" version="3">Go get my lute</content>
-  <content contentuid="hf64db892g6b03g5a9cg9125gaafcefd6bfe1" version="3">&lt;b&gt;NO&lt;/b&gt;</content>
-  <content contentuid="h63e276e0gcb33g5e4dg6c78gb31d68c5e5a9" version="3">Ok</content>
-  <content contentuid="h7e4ae732g1e76g5d83g64edg34661e0690f5" version="3">Its in that cave over there</content>
-  <content contentuid="hdaae1174ga453gc05ega02bgbbd94fcab753" version="1">Sten</content>
+  <content contentuid="h58ba8122g74d9g7cfdg3c1bg65257c695a9b" version="4">Go get my lute</content>
+  <content contentuid="hf64db892g6b03g5a9cg9125gaafcefd6bfe1" version="4">&lt;b&gt;NO&lt;/b&gt;</content>
+  <content contentuid="h63e276e0gcb33g5e4dg6c78gb31d68c5e5a9" version="4">Ok</content>
+  <content contentuid="h7e4ae732g1e76g5d83g64edg34661e0690f5" version="4">Its in that cave over there</content>
+  <content contentuid="hdaae1174ga453gc05ega02bgbbd94fcab753" version="2">Sten</content>
+  <content contentuid="h86a22930gf467g2106g8900gb57412fd00c1" version="2">A Song For The Ages</content>
+  <content contentuid="hcba8ecd2g4b53g55c9g9329gba5bfef510a1" version="4">Search your surroundings for Stens lute</content>
+  <content contentuid="h1e649f2eg87a5g81d2g270bg34acec106c7b" version="2">Find the lute for Sten</content>
+  <content contentuid="h7884e5fdg073agc734gda73g71b727c3b602" version="2">Return the lute to Sten</content>
 </contentList>

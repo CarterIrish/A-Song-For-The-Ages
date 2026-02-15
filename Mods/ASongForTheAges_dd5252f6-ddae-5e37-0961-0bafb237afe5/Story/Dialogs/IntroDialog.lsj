@@ -58,7 +58,7 @@
                                                 "TagText" : {
                                                    "handle" : "h58ba8122g74d9g7cfdg3c1bg65257c695a9b",
                                                    "type" : "TranslatedString",
-                                                   "version" : 3
+                                                   "version" : 4
                                                 },
                                                 "stub" : {"type" : "bool", "value" : true}
                                              }
@@ -230,7 +230,7 @@
                                                 "TagText" : {
                                                    "handle" : "h63e276e0gcb33g5e4dg6c78gb31d68c5e5a9",
                                                    "type" : "TranslatedString",
-                                                   "version" : 3
+                                                   "version" : 4
                                                 },
                                                 "stub" : {"type" : "bool", "value" : true}
                                              }
@@ -403,7 +403,7 @@
                                                 "TagText" : {
                                                    "handle" : "h7e4ae732g1e76g5d83g64edg34661e0690f5",
                                                    "type" : "TranslatedString",
-                                                   "version" : 3
+                                                   "version" : 4
                                                 },
                                                 "stub" : {"type" : "bool", "value" : true}
                                              }
@@ -534,7 +534,20 @@
                            }
                         ],
                         "endnode" : {"type" : "bool", "value" : true},
-                        "setflags" : [ {} ],
+                        "setflags" : [
+                           {
+                              "flaggroup" : [
+                                 {
+                                    "flag" : [
+                                       {
+                                          "UUID" : {"type" : "FixedString", "value" : "625a89d6-746c-449f-bc26-1b4bfa759321"},
+                                          "paramval" : {"type" : "int32", "value" : 1},
+                                          "value" : {"type" : "bool", "value" : true}
+                                       }
+                                    ],"type" : {"type" : "FixedString", "value" : "Quest"}}
+                              ]
+                           }
+                        ],
                         "speaker" : {"type" : "int32", "value" : 0}
                      },
                      {
@@ -565,7 +578,7 @@
                                                 "TagText" : {
                                                    "handle" : "hf64db892g6b03g5a9cg9125gaafcefd6bfe1",
                                                    "type" : "TranslatedString",
-                                                   "version" : 3
+                                                   "version" : 4
                                                 },
                                                 "stub" : {"type" : "bool", "value" : true}
                                              }

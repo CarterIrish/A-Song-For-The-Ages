@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="8" revision="0" build="500"/>
+    <region id="Objectives">
+        <node id="root">
+            <children>
+                <node id="Objective">
+                    <attribute id="Description" type="TranslatedString" handle="h1e649f2eg87a5g81d2g270bg34acec106c7b" version="2"/>
+                    <attribute id="ObjectiveID" type="FixedString" value="RIT_FindTheLute"/>
+                    <attribute id="Priority" type="int32" value="0"/>
+                    <attribute id="QuestID" type="FixedString" value="RIT_ASongForTheAges"/>
+                    <attribute id="QuestObjectiveGuid" type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                </node>
+                <node id="Objective">
+                    <attribute id="Description" type="TranslatedString" handle="ls::TranslatedStringRepository::s_HandleUnknown" version="0"/>
+                    <attribute id="ObjectiveID" type="FixedString" value="RIT_ReturnTheLute"/>
+                    <attribute id="Priority" type="int32" value="0"/>
+                    <attribute id="QuestID" type="FixedString" value="RIT_ASongForTheAges"/>
+                    <attribute id="QuestObjectiveGuid" type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>
