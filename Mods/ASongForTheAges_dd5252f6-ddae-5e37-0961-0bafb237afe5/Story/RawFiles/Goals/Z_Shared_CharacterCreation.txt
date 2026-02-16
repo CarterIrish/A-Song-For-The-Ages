@@ -4,7 +4,7 @@ INITSECTION
 // Configuration: define the following in a top-level goal of your mod (or variants)
 
 // * Information on movie to play when transitioning from character creation to startup level configured in mod settings (can be empty string)
-DB_CharacterCreationTransitionInfo("WLD_SongForTheAges_A", "GUS_IntroCinematic");
+DB_CharacterCreationTransitionInfo("RIT_QuestStructure", "GUS_IntroCinematic");
 // * Default:
 //     None
 
