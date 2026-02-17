@@ -12,9 +12,9 @@
                     <attribute id="QuestObjectiveGuid" type="guid" value="00000000-0000-0000-0000-000000000000"/>
                 </node>
                 <node id="Objective">
-                    <attribute id="Description" type="TranslatedString" handle="ls::TranslatedStringRepository::s_HandleUnknown" version="0"/>
+                    <attribute id="Description" type="TranslatedString" handle="h67ff9fd9gd10cg580cg0c59g38074007d1e4" version="2"/>
                     <attribute id="ObjectiveID" type="FixedString" value="RIT_ReturnTheLute"/>
-                    <attribute id="Priority" type="int32" value="0"/>
+                    <attribute id="Priority" type="int32" value="1"/>
                     <attribute id="QuestID" type="FixedString" value="RIT_ASongForTheAges"/>
                     <attribute id="QuestObjectiveGuid" type="guid" value="00000000-0000-0000-0000-000000000000"/>
                 </node>
