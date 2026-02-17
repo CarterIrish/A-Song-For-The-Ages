@@ -20,7 +20,7 @@
                 <node id="ModuleInfo">
                     <attribute id="Author" type="LSString" value="MF Tadpoles"/>
                     <attribute id="CharacterCreationLevelName" type="FixedString" value=""/>
-                    <attribute id="Description" type="LSString" value=""/>
+                    <attribute id="Description" type="LSString" value="A Baldurs Gate 3 Story Quest mod about a bard&amp;apos;s journey to find the greatest song of all time."/>
                     <attribute id="FileSize" type="uint64" value="0"/>
                     <attribute id="Folder" type="LSString" value="ASongForTheAges_dd5252f6-ddae-5e37-0961-0bafb237afe5"/>
                     <attribute id="LobbyLevelName" type="FixedString" value=""/>
