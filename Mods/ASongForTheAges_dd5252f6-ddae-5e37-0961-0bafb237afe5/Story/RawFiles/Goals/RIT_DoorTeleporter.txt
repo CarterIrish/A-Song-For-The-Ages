@@ -1,0 +1,13 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+
+KBSECTION
+IF
+UseFinished(_Player, S_Door_Teleporter_TEST_000_c749ddc2-7cf8-4262-a7ee-bc69ceb9e553, 1)
+THEN
+TeleportPartiesToLevelWithMovie("RIT_QuestStructure", "", "");
+EXITSECTION
+
+ENDEXITSECTION
+ParentTargetEdge "__Start"
