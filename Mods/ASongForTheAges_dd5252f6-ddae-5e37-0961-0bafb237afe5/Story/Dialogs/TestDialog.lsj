@@ -19,14 +19,14 @@
                   ]
                }
             ],
-            "TimelineId" : {"type" : "FixedString", "value" : "5ef89f83-ba57-c5de-5d07-662dbd71cd36"},
-            "UUID" : {"type" : "FixedString", "value" : "ec2ff145-4001-b804-9114-6409c8e456cc"},
+            "DefaultSpeakerIndex" : {"type" : "int32", "value" : 1},
+            "UUID" : {"type" : "FixedString", "value" : "b28ddcbc-0383-0474-1881-e4fac6c9acae"},
             "category" : {"type" : "LSString", "value" : "Generic NPC Dialog"},
             "nodes" : [
                {
                   "RootNodes" : [
                      {
-                        "RootNodes" : {"type" : "FixedString", "value" : "22d821c5-9dd0-c898-1624-58384cea500c"}
+                        "RootNodes" : {"type" : "FixedString", "value" : "6e3e2b2d-2585-4152-add5-64f6f92624e6"}
                      }
                   ],
                   "node" : [
@@ -54,11 +54,16 @@
                                        {
                                           "TagText" : [
                                              {
-                                                "LineId" : {"type" : "guid", "value" : "807f031a-faba-4017-bb85-0ad1c2ba0119"},
-                                                "TagText" : {
+                                                "LineId" : {"type" : "guid", "value" : "db3db89e-ced0-41de-b31d-92223c4d5598"},
+                                                "OldText" : {
                                                    "handle" : "h74453ec1g590dg0f3aga6bcg9904b29e7d18",
                                                    "type" : "TranslatedString",
                                                    "version" : 7
+                                                },
+                                                "TagText" : {
+                                                   "handle" : "hb55fcd3eg4afegde5eg2befga4eb300926df",
+                                                   "type" : "TranslatedString",
+                                                   "version" : 1
                                                 },
                                                 "stub" : {"type" : "bool", "value" : true}
                                              }
@@ -70,16 +75,16 @@
                            }
                         ],
                         "Tags" : [ {} ],
-                        "UUID" : {"type" : "FixedString", "value" : "22d821c5-9dd0-c898-1624-58384cea500c"},
+                        "UUID" : {"type" : "FixedString", "value" : "6e3e2b2d-2585-4152-add5-64f6f92624e6"},
                         "checkflags" : [ {} ],
                         "children" : [
                            {
                               "child" : [
                                  {
-                                    "UUID" : {"type" : "FixedString", "value" : "3cffa963-c81f-ce94-c545-ebc0c6e292de"}
+                                    "UUID" : {"type" : "FixedString", "value" : "9418b235-d8d2-46e7-90ce-7e8863d2bdb0"}
                                  },
                                  {
-                                    "UUID" : {"type" : "FixedString", "value" : "45c016b5-9307-859f-98ab-5e237c17ada3"}
+                                    "UUID" : {"type" : "FixedString", "value" : "c6820433-b19a-43ab-931b-443322cd0e09"}
                                  }
                               ]
                            }
@@ -226,11 +231,16 @@
                                        {
                                           "TagText" : [
                                              {
-                                                "LineId" : {"type" : "guid", "value" : "d188f5ae-480b-41e2-8b7d-7ac62f925cc0"},
-                                                "TagText" : {
+                                                "LineId" : {"type" : "guid", "value" : "e387afaf-d50a-4bac-a621-8fd675ad49be"},
+                                                "OldText" : {
                                                    "handle" : "h35ee0edag55a7g8721geeeag96633524b42e",
                                                    "type" : "TranslatedString",
                                                    "version" : 7
+                                                },
+                                                "TagText" : {
+                                                   "handle" : "hd37e386cga2d8g39d9g7346gcc902daf0f67",
+                                                   "type" : "TranslatedString",
+                                                   "version" : 1
                                                 },
                                                 "stub" : {"type" : "bool", "value" : true}
                                              }
@@ -242,7 +252,7 @@
                            }
                         ],
                         "Tags" : [ {} ],
-                        "UUID" : {"type" : "FixedString", "value" : "3cffa963-c81f-ce94-c545-ebc0c6e292de"},
+                        "UUID" : {"type" : "FixedString", "value" : "9418b235-d8d2-46e7-90ce-7e8863d2bdb0"},
                         "ValidatedFlags" : [
                            {
                               "ValidatedHasValue" : {"type" : "bool", "value" : false}
@@ -393,11 +403,16 @@
                                        {
                                           "TagText" : [
                                              {
-                                                "LineId" : {"type" : "guid", "value" : "6f8f7c0d-5f1a-48e0-a858-ad6d271ca0c2"},
-                                                "TagText" : {
+                                                "LineId" : {"type" : "guid", "value" : "ea9ebe92-9e0d-4c7a-83a3-0d2167ab77b3"},
+                                                "OldText" : {
                                                    "handle" : "h1d1f3cb9g8578gf1b8gca38gae3b11f4ecb5",
                                                    "type" : "TranslatedString",
                                                    "version" : 7
+                                                },
+                                                "TagText" : {
+                                                   "handle" : "h637269b6ga143gd101g0c32g7f7157a15a21",
+                                                   "type" : "TranslatedString",
+                                                   "version" : 1
                                                 },
                                                 "stub" : {"type" : "bool", "value" : true}
                                              }
@@ -409,7 +424,7 @@
                            }
                         ],
                         "Tags" : [ {} ],
-                        "UUID" : {"type" : "FixedString", "value" : "45c016b5-9307-859f-98ab-5e237c17ada3"},
+                        "UUID" : {"type" : "FixedString", "value" : "c6820433-b19a-43ab-931b-443322cd0e09"},
                         "ValidatedFlags" : [
                            {
                               "ValidatedHasValue" : {"type" : "bool", "value" : false}
@@ -420,7 +435,7 @@
                            {
                               "child" : [
                                  {
-                                    "UUID" : {"type" : "FixedString", "value" : "9379afa3-415c-d393-f6d7-14757a6e0b1d"}
+                                    "UUID" : {"type" : "FixedString", "value" : "e04a3e62-c9ef-4b75-aa06-b9c3ae1749d5"}
                                  }
                               ]
                            }
@@ -566,11 +581,16 @@
                                        {
                                           "TagText" : [
                                              {
-                                                "LineId" : {"type" : "guid", "value" : "3f0c7cfd-65c6-4b26-8fc1-8ae4a3da2ef4"},
-                                                "TagText" : {
+                                                "LineId" : {"type" : "guid", "value" : "002318ab-c768-48d3-b0d0-ba0e4a351f60"},
+                                                "OldText" : {
                                                    "handle" : "h488bc316g6ec2g1729g619fgeab514127741",
                                                    "type" : "TranslatedString",
                                                    "version" : 7
+                                                },
+                                                "TagText" : {
+                                                   "handle" : "h753df4c0g9858g37cfg44fag66483cd35f42",
+                                                   "type" : "TranslatedString",
+                                                   "version" : 1
                                                 },
                                                 "stub" : {"type" : "bool", "value" : true}
                                              }
@@ -582,7 +602,7 @@
                            }
                         ],
                         "Tags" : [ {} ],
-                        "UUID" : {"type" : "FixedString", "value" : "9379afa3-415c-d393-f6d7-14757a6e0b1d"},
+                        "UUID" : {"type" : "FixedString", "value" : "e04a3e62-c9ef-4b75-aa06-b9c3ae1749d5"},
                         "checkflags" : [ {} ],
                         "children" : [ {} ],
                         "constructor" : {"type" : "FixedString", "value" : "TagAnswer"},
@@ -727,7 +747,7 @@
          "editorData" : {
             "HowToTrigger" : {"type" : "LSString", "value" : ""},
             "autoFidelity" : {"type" : "LSString", "value" : "Bronze"},
-            "bronzeNodesCount" : {"type" : "int32", "value" : 2},
+            "bronzeNodesCount" : {"type" : "int32", "value" : 0},
             "currentFidelity" : {"type" : "LSString", "value" : "Bronze"},
             "customNodesCount" : {"type" : "int32", "value" : 0},
             "defaultAttitudes" : [
@@ -762,7 +782,16 @@
                {
                   "defaultPathNode" : [
                      {
+                        "UUID" : {"type" : "LSString", "value" : "6e3e2b2d-2585-4152-add5-64f6f92624e6"}
+                     },
+                     {
                         "UUID" : {"type" : "LSString", "value" : "22d821c5-9dd0-c898-1624-58384cea500c"}
+                     },
+                     {
+                        "UUID" : {"type" : "LSString", "value" : "45c016b5-9307-859f-98ab-5e237c17ada3"}
+                     },
+                     {
+                        "UUID" : {"type" : "LSString", "value" : "9379afa3-415c-d393-f6d7-14757a6e0b1d"}
                      }
                   ]
                }
