@@ -1,0 +1,15 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+
+KBSECTION
+IF
+UseFinished(_Player, RIT_Experience_001_b291563a-5737-44fa-aec2-adb394c08e86, 1)
+AND
+DB_Players(_Player)
+THEN
+AddExplorationExperience(_Player, 6500);
+EXITSECTION
+
+ENDEXITSECTION
+ParentTargetEdge "__Start"
