@@ -16,16 +16,16 @@
                     <children>
                         <node id="QuestStep">
                             <attribute id="Achievement" type="FixedString" value=""/>
-                            <attribute id="Description" type="TranslatedString" handle="hcba8ecd2g4b53g55c9g9329gba5bfef510a1" version="4"/>
+                            <attribute id="Description" type="TranslatedString" handle="h451ab29dg6174g021eg4f73gc8daa9b60d9d" version="2"/>
                             <attribute id="DevComment" type="FixedString" value=""/>
-                            <attribute id="DialogFlagGUID" type="guid" value="625a89d6-746c-449f-bc26-1b4bfa759321"/>
+                            <attribute id="DialogFlagGUID" type="guid" value="0ad1572a-7d61-4492-9158-839aad788167"/>
                             <attribute id="ExperienceReward" type="guid" value="00000000-0000-0000-0000-000000000000"/>
-                            <attribute id="ID" type="FixedString" value="RIT_FindTheLuteStep"/>
+                            <attribute id="ID" type="FixedString" value="RIT_HeadNorthwest_Step"/>
                             <attribute id="LevelOverride" type="int32" value="0"/>
-                            <attribute id="Objective" type="FixedString" value="RIT_FindTheLute"/>
+                            <attribute id="Objective" type="FixedString" value="Find Trexels Cavern"/>
                             <attribute id="QuestRewardCount" type="int32" value="0"/>
                             <attribute id="QuestRewardLevel" type="int32" value="0"/>
-                            <attribute id="QuestStepGuid" type="guid" value="bde25351-1597-4534-b8d1-9147f35d0e27"/>
+                            <attribute id="QuestStepGuid" type="guid" value="f3139760-b0db-41bc-b825-477f2aca2e98"/>
                             <attribute id="QuestTitleOverride" type="TranslatedString" handle="ls::TranslatedStringRepository::s_HandleUnknown" version="0"/>
                             <attribute id="ReputationGain" type="int32" value="0"/>
                             <attribute id="RewardAdditionalGold " type="guid" value="00000000-0000-0000-0000-000000000000"/>
@@ -38,16 +38,16 @@
                         </node>
                         <node id="QuestStep">
                             <attribute id="Achievement" type="FixedString" value=""/>
-                            <attribute id="Description" type="TranslatedString" handle="h7884e5fdg073agc734gda73g71b727c3b602" version="2"/>
+                            <attribute id="Description" type="TranslatedString" handle="h08a8142fg0d86g9601g485fg20c9365482dd" version="2"/>
                             <attribute id="DevComment" type="FixedString" value=""/>
-                            <attribute id="DialogFlagGUID" type="guid" value="23390f68-9ac9-4a77-8540-1319134aeb02"/>
+                            <attribute id="DialogFlagGUID" type="guid" value="5f77025f-d2a1-4da1-ad58-5700c79558d1"/>
                             <attribute id="ExperienceReward" type="guid" value="00000000-0000-0000-0000-000000000000"/>
-                            <attribute id="ID" type="FixedString" value="RIT_ReturnTheLuteStep"/>
+                            <attribute id="ID" type="FixedString" value="RIT_SearchForCaveEntrance_Step"/>
                             <attribute id="LevelOverride" type="int32" value="0"/>
-                            <attribute id="Objective" type="FixedString" value="RIT_ReturnTheLute"/>
+                            <attribute id="Objective" type="FixedString" value="Find Trexels Cavern"/>
                             <attribute id="QuestRewardCount" type="int32" value="0"/>
                             <attribute id="QuestRewardLevel" type="int32" value="0"/>
-                            <attribute id="QuestStepGuid" type="guid" value="f7f790ea-e8de-4eae-b3d6-b9f104c8a8f1"/>
+                            <attribute id="QuestStepGuid" type="guid" value="260057ce-b4ef-4508-ad76-edc470695988"/>
                             <attribute id="QuestTitleOverride" type="TranslatedString" handle="ls::TranslatedStringRepository::s_HandleUnknown" version="0"/>
                             <attribute id="ReputationGain" type="int32" value="0"/>
                             <attribute id="RewardAdditionalGold " type="guid" value="00000000-0000-0000-0000-000000000000"/>
@@ -57,6 +57,204 @@
                             <attribute id="RewardAdditionalTreasureTable" type="FixedString" value=""/>
                             <attribute id="StatTriggerGUID" type="guid" value="00000000-0000-0000-0000-000000000000"/>
                             <attribute id="UnlockDisable" type="int32" value="1"/>
+                        </node>
+                        <node id="QuestStep">
+                            <attribute id="Achievement" type="FixedString" value=""/>
+                            <attribute id="Description" type="TranslatedString" handle="h8889c613gbff6gab7ag48aagdb8a54fe93ff" version="2"/>
+                            <attribute id="DevComment" type="FixedString" value=""/>
+                            <attribute id="DialogFlagGUID" type="guid" value="a1333ed5-9521-4583-8ec2-992085b7f9b9"/>
+                            <attribute id="ExperienceReward" type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                            <attribute id="ID" type="FixedString" value="RIT_KillGoblins_Step"/>
+                            <attribute id="LevelOverride" type="int32" value="0"/>
+                            <attribute id="Objective" type="FixedString" value="Find Trexels Cavern"/>
+                            <attribute id="QuestRewardCount" type="int32" value="0"/>
+                            <attribute id="QuestRewardLevel" type="int32" value="0"/>
+                            <attribute id="QuestStepGuid" type="guid" value="b6469bb7-f756-40ee-bb2e-26642363d885"/>
+                            <attribute id="QuestTitleOverride" type="TranslatedString" handle="ls::TranslatedStringRepository::s_HandleUnknown" version="0"/>
+                            <attribute id="ReputationGain" type="int32" value="0"/>
+                            <attribute id="RewardAdditionalGold " type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                            <attribute id="RewardAdditionalOwnerGUID" type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                            <attribute id="RewardAdditionalOwnerLevelName" type="LSString" value=""/>
+                            <attribute id="RewardAdditionalOwnerName" type="LSString" value=""/>
+                            <attribute id="RewardAdditionalTreasureTable" type="FixedString" value=""/>
+                            <attribute id="StatTriggerGUID" type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                            <attribute id="UnlockDisable" type="int32" value="1"/>
+                        </node>
+                        <node id="QuestStep">
+                            <attribute id="Achievement" type="FixedString" value=""/>
+                            <attribute id="Description" type="TranslatedString" handle="h8176c4c4g7f05g6731g58beg24810f506c87" version="4"/>
+                            <attribute id="DevComment" type="FixedString" value=""/>
+                            <attribute id="DialogFlagGUID" type="guid" value="40758ced-5ddb-4bf8-869a-46406a71c8b7"/>
+                            <attribute id="ExperienceReward" type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                            <attribute id="ID" type="FixedString" value="RIT_EnterTheCavern_Step"/>
+                            <attribute id="LevelOverride" type="int32" value="0"/>
+                            <attribute id="Objective" type="FixedString" value="Search Trexels Cavern"/>
+                            <attribute id="QuestRewardCount" type="int32" value="0"/>
+                            <attribute id="QuestRewardLevel" type="int32" value="0"/>
+                            <attribute id="QuestStepGuid" type="guid" value="57deb8c3-9376-4422-97c0-41f2bd161c67"/>
+                            <attribute id="QuestTitleOverride" type="TranslatedString" handle="ls::TranslatedStringRepository::s_HandleUnknown" version="0"/>
+                            <attribute id="ReputationGain" type="int32" value="0"/>
+                            <attribute id="RewardAdditionalGold " type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                            <attribute id="RewardAdditionalOwnerGUID" type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                            <attribute id="RewardAdditionalOwnerLevelName" type="LSString" value=""/>
+                            <attribute id="RewardAdditionalOwnerName" type="LSString" value=""/>
+                            <attribute id="RewardAdditionalTreasureTable" type="FixedString" value=""/>
+                            <attribute id="StatTriggerGUID" type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                            <attribute id="UnlockDisable" type="int32" value="1"/>
+                        </node>
+                        <node id="QuestStep">
+                            <attribute id="Achievement" type="FixedString" value=""/>
+                            <attribute id="Description" type="TranslatedString" handle="he7f51174ga4e0gd4adg27f9g09370d4ff469" version="2"/>
+                            <attribute id="DevComment" type="FixedString" value=""/>
+                            <attribute id="DialogFlagGUID" type="guid" value="8c48a8b4-413a-41b7-828d-9a1f85c676dd"/>
+                            <attribute id="ExperienceReward" type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                            <attribute id="ID" type="FixedString" value="RIT_SpeakToDafodil_Step"/>
+                            <attribute id="LevelOverride" type="int32" value="0"/>
+                            <attribute id="Objective" type="FixedString" value="Find Trexels Cavern"/>
+                            <attribute id="QuestRewardCount" type="int32" value="0"/>
+                            <attribute id="QuestRewardLevel" type="int32" value="0"/>
+                            <attribute id="QuestStepGuid" type="guid" value="4340873a-fd69-43d2-8ee6-4d6a9556ac72"/>
+                            <attribute id="QuestTitleOverride" type="TranslatedString" handle="ls::TranslatedStringRepository::s_HandleUnknown" version="0"/>
+                            <attribute id="ReputationGain" type="int32" value="0"/>
+                            <attribute id="RewardAdditionalGold " type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                            <attribute id="RewardAdditionalOwnerGUID" type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                            <attribute id="RewardAdditionalOwnerLevelName" type="LSString" value=""/>
+                            <attribute id="RewardAdditionalOwnerName" type="LSString" value=""/>
+                            <attribute id="RewardAdditionalTreasureTable" type="FixedString" value=""/>
+                            <attribute id="StatTriggerGUID" type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                            <attribute id="UnlockDisable" type="int32" value="1"/>
+                        </node>
+                        <node id="QuestStep">
+                            <attribute id="Achievement" type="FixedString" value=""/>
+                            <attribute id="Description" type="TranslatedString" handle="h411da345g4f64g245cgc5c9geade42f248e0" version="2"/>
+                            <attribute id="DevComment" type="FixedString" value=""/>
+                            <attribute id="DialogFlagGUID" type="guid" value="0f3ff316-28b9-424d-b440-3e7befb2fb40"/>
+                            <attribute id="ExperienceReward" type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                            <attribute id="ID" type="FixedString" value="RIT_SearchTheCavern_Step"/>
+                            <attribute id="LevelOverride" type="int32" value="0"/>
+                            <attribute id="Objective" type="FixedString" value="Search Trexels Cavern"/>
+                            <attribute id="QuestRewardCount" type="int32" value="0"/>
+                            <attribute id="QuestRewardLevel" type="int32" value="0"/>
+                            <attribute id="QuestStepGuid" type="guid" value="2025f1aa-5d2c-4530-94b2-92e4b26ef182"/>
+                            <attribute id="QuestTitleOverride" type="TranslatedString" handle="ls::TranslatedStringRepository::s_HandleUnknown" version="0"/>
+                            <attribute id="ReputationGain" type="int32" value="0"/>
+                            <attribute id="RewardAdditionalGold " type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                            <attribute id="RewardAdditionalOwnerGUID" type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                            <attribute id="RewardAdditionalOwnerLevelName" type="LSString" value=""/>
+                            <attribute id="RewardAdditionalOwnerName" type="LSString" value=""/>
+                            <attribute id="RewardAdditionalTreasureTable" type="FixedString" value=""/>
+                            <attribute id="StatTriggerGUID" type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                            <attribute id="UnlockDisable" type="int32" value="0"/>
+                        </node>
+                        <node id="QuestStep">
+                            <attribute id="Achievement" type="FixedString" value=""/>
+                            <attribute id="Description" type="TranslatedString" handle="hc3245295gaf8bgd5f6gcf77g1b4efa17a15e" version="4"/>
+                            <attribute id="DevComment" type="FixedString" value=""/>
+                            <attribute id="DialogFlagGUID" type="guid" value="5ef90c4e-d252-4c58-9f1e-7ce369252565"/>
+                            <attribute id="ExperienceReward" type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                            <attribute id="ID" type="FixedString" value="RIT_FightTrexel_Step"/>
+                            <attribute id="LevelOverride" type="int32" value="0"/>
+                            <attribute id="Objective" type="FixedString" value="Confront Trexel"/>
+                            <attribute id="QuestRewardCount" type="int32" value="0"/>
+                            <attribute id="QuestRewardLevel" type="int32" value="0"/>
+                            <attribute id="QuestStepGuid" type="guid" value="b68dfd8a-5b3b-4fef-a5a3-90fd3e1f2a3e"/>
+                            <attribute id="QuestTitleOverride" type="TranslatedString" handle="ls::TranslatedStringRepository::s_HandleUnknown" version="0"/>
+                            <attribute id="ReputationGain" type="int32" value="0"/>
+                            <attribute id="RewardAdditionalGold " type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                            <attribute id="RewardAdditionalOwnerGUID" type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                            <attribute id="RewardAdditionalOwnerLevelName" type="LSString" value=""/>
+                            <attribute id="RewardAdditionalOwnerName" type="LSString" value=""/>
+                            <attribute id="RewardAdditionalTreasureTable" type="FixedString" value=""/>
+                            <attribute id="StatTriggerGUID" type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                            <attribute id="UnlockDisable" type="int32" value="1"/>
+                        </node>
+                        <node id="QuestStep">
+                            <attribute id="Achievement" type="FixedString" value=""/>
+                            <attribute id="Description" type="TranslatedString" handle="hd04a5de5g969cgef7eg77cbg0e85a99219a2" version="2"/>
+                            <attribute id="DevComment" type="FixedString" value=""/>
+                            <attribute id="DialogFlagGUID" type="guid" value="48a9cd0d-5242-4214-bf2d-7372fb07b00b"/>
+                            <attribute id="ExperienceReward" type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                            <attribute id="ID" type="FixedString" value="RIT_ClaimTheLute_Step"/>
+                            <attribute id="LevelOverride" type="int32" value="0"/>
+                            <attribute id="Objective" type="FixedString" value="Confront Trexel"/>
+                            <attribute id="QuestRewardCount" type="int32" value="0"/>
+                            <attribute id="QuestRewardLevel" type="int32" value="0"/>
+                            <attribute id="QuestStepGuid" type="guid" value="aa519006-64a3-49bb-a5f6-1534324ff87b"/>
+                            <attribute id="QuestTitleOverride" type="TranslatedString" handle="ls::TranslatedStringRepository::s_HandleUnknown" version="0"/>
+                            <attribute id="ReputationGain" type="int32" value="0"/>
+                            <attribute id="RewardAdditionalGold " type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                            <attribute id="RewardAdditionalOwnerGUID" type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                            <attribute id="RewardAdditionalOwnerLevelName" type="LSString" value=""/>
+                            <attribute id="RewardAdditionalOwnerName" type="LSString" value=""/>
+                            <attribute id="RewardAdditionalTreasureTable" type="FixedString" value=""/>
+                            <attribute id="StatTriggerGUID" type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                            <attribute id="UnlockDisable" type="int32" value="1"/>
+                        </node>
+                        <node id="QuestStep">
+                            <attribute id="Achievement" type="FixedString" value=""/>
+                            <attribute id="Description" type="TranslatedString" handle="ls::TranslatedStringRepository::s_HandleUnknown" version="0"/>
+                            <attribute id="DevComment" type="FixedString" value=""/>
+                            <attribute id="DialogFlagGUID" type="guid" value="e0c4328a-b304-4e21-90e6-425e2491f298"/>
+                            <attribute id="ExperienceReward" type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                            <attribute id="ID" type="FixedString" value=""/>
+                            <attribute id="LevelOverride" type="int32" value="0"/>
+                            <attribute id="Objective" type="FixedString" value="Confront Trexel"/>
+                            <attribute id="QuestRewardCount" type="int32" value="0"/>
+                            <attribute id="QuestRewardLevel" type="int32" value="0"/>
+                            <attribute id="QuestStepGuid" type="guid" value="ac37d0a0-4b87-4075-9344-821ae2dce47d"/>
+                            <attribute id="QuestTitleOverride" type="TranslatedString" handle="ls::TranslatedStringRepository::s_HandleUnknown" version="0"/>
+                            <attribute id="ReputationGain" type="int32" value="0"/>
+                            <attribute id="RewardAdditionalGold " type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                            <attribute id="RewardAdditionalOwnerGUID" type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                            <attribute id="RewardAdditionalOwnerLevelName" type="LSString" value=""/>
+                            <attribute id="RewardAdditionalOwnerName" type="LSString" value=""/>
+                            <attribute id="RewardAdditionalTreasureTable" type="FixedString" value=""/>
+                            <attribute id="StatTriggerGUID" type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                            <attribute id="UnlockDisable" type="int32" value="0"/>
+                        </node>
+                        <node id="QuestStep">
+                            <attribute id="Achievement" type="FixedString" value=""/>
+                            <attribute id="Description" type="TranslatedString" handle="hf92923ecgefc5gf388gf059g405ed39e786a" version="2"/>
+                            <attribute id="DevComment" type="FixedString" value=""/>
+                            <attribute id="DialogFlagGUID" type="guid" value="de393992-bfae-4cd6-94c0-9ece4ee25a34"/>
+                            <attribute id="ExperienceReward" type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                            <attribute id="ID" type="FixedString" value="RIT_ReturnToBrokenString_Step"/>
+                            <attribute id="LevelOverride" type="int32" value="0"/>
+                            <attribute id="Objective" type="FixedString" value="Return to Dafodil Brokenstring"/>
+                            <attribute id="QuestRewardCount" type="int32" value="0"/>
+                            <attribute id="QuestRewardLevel" type="int32" value="0"/>
+                            <attribute id="QuestStepGuid" type="guid" value="897a3fac-9cb8-4e25-b6f2-eead5658f439"/>
+                            <attribute id="QuestTitleOverride" type="TranslatedString" handle="ls::TranslatedStringRepository::s_HandleUnknown" version="0"/>
+                            <attribute id="ReputationGain" type="int32" value="0"/>
+                            <attribute id="RewardAdditionalGold " type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                            <attribute id="RewardAdditionalOwnerGUID" type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                            <attribute id="RewardAdditionalOwnerLevelName" type="LSString" value=""/>
+                            <attribute id="RewardAdditionalOwnerName" type="LSString" value=""/>
+                            <attribute id="RewardAdditionalTreasureTable" type="FixedString" value=""/>
+                            <attribute id="StatTriggerGUID" type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                            <attribute id="UnlockDisable" type="int32" value="1"/>
+                        </node>
+                        <node id="QuestStep">
+                            <attribute id="Achievement" type="FixedString" value=""/>
+                            <attribute id="Description" type="TranslatedString" handle="ls::TranslatedStringRepository::s_HandleUnknown" version="0"/>
+                            <attribute id="DevComment" type="FixedString" value=""/>
+                            <attribute id="DialogFlagGUID" type="guid" value="28e040c5-debb-4b2b-8490-b8d45011500d"/>
+                            <attribute id="ExperienceReward" type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                            <attribute id="ID" type="FixedString" value="RIT_ReturnTheLute_Step"/>
+                            <attribute id="LevelOverride" type="int32" value="0"/>
+                            <attribute id="Objective" type="FixedString" value="Return to Dafodil Brokenstring"/>
+                            <attribute id="QuestRewardCount" type="int32" value="0"/>
+                            <attribute id="QuestRewardLevel" type="int32" value="0"/>
+                            <attribute id="QuestStepGuid" type="guid" value="475a5bde-7c6c-4aee-a9ae-6038166126d6"/>
+                            <attribute id="QuestTitleOverride" type="TranslatedString" handle="ls::TranslatedStringRepository::s_HandleUnknown" version="0"/>
+                            <attribute id="ReputationGain" type="int32" value="0"/>
+                            <attribute id="RewardAdditionalGold " type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                            <attribute id="RewardAdditionalOwnerGUID" type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                            <attribute id="RewardAdditionalOwnerLevelName" type="LSString" value=""/>
+                            <attribute id="RewardAdditionalOwnerName" type="LSString" value=""/>
+                            <attribute id="RewardAdditionalTreasureTable" type="FixedString" value=""/>
+                            <attribute id="StatTriggerGUID" type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                            <attribute id="UnlockDisable" type="int32" value="0"/>
                         </node>
                     </children>
                 </node>
