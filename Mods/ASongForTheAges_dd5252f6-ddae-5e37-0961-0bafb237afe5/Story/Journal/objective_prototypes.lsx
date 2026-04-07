@@ -5,16 +5,30 @@
         <node id="root">
             <children>
                 <node id="Objective">
-                    <attribute id="Description" type="TranslatedString" handle="h1e649f2eg87a5g81d2g270bg34acec106c7b" version="2"/>
-                    <attribute id="ObjectiveID" type="FixedString" value="RIT_FindTheLute"/>
+                    <attribute id="Description" type="TranslatedString" handle="h572f1176g19b3ge49dg6fb3g6c5f641ac71c" version="4"/>
+                    <attribute id="ObjectiveID" type="FixedString" value="Find Trexels Cavern"/>
                     <attribute id="Priority" type="int32" value="0"/>
                     <attribute id="QuestID" type="FixedString" value="RIT_ASongForTheAges"/>
                     <attribute id="QuestObjectiveGuid" type="guid" value="00000000-0000-0000-0000-000000000000"/>
                 </node>
                 <node id="Objective">
-                    <attribute id="Description" type="TranslatedString" handle="h67ff9fd9gd10cg580cg0c59g38074007d1e4" version="2"/>
-                    <attribute id="ObjectiveID" type="FixedString" value="RIT_ReturnTheLute"/>
+                    <attribute id="Description" type="TranslatedString" handle="h57c2007fgb063g19d8gc747gbffd27a9d772" version="2"/>
+                    <attribute id="ObjectiveID" type="FixedString" value="Search Trexels Cavern"/>
                     <attribute id="Priority" type="int32" value="1"/>
+                    <attribute id="QuestID" type="FixedString" value="RIT_ASongForTheAges"/>
+                    <attribute id="QuestObjectiveGuid" type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                </node>
+                <node id="Objective">
+                    <attribute id="Description" type="TranslatedString" handle="hd8fa9e06g4580g8194g302ag8441d56bbd1f" version="2"/>
+                    <attribute id="ObjectiveID" type="FixedString" value="Confront Trexel"/>
+                    <attribute id="Priority" type="int32" value="2"/>
+                    <attribute id="QuestID" type="FixedString" value="RIT_ASongForTheAges"/>
+                    <attribute id="QuestObjectiveGuid" type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                </node>
+                <node id="Objective">
+                    <attribute id="Description" type="TranslatedString" handle="h38e8c237gfb18gc9efgef85g6312ca9c2f74" version="2"/>
+                    <attribute id="ObjectiveID" type="FixedString" value="Return to Dafodil Brokenstring"/>
+                    <attribute id="Priority" type="int32" value="3"/>
                     <attribute id="QuestID" type="FixedString" value="RIT_ASongForTheAges"/>
                     <attribute id="QuestObjectiveGuid" type="guid" value="00000000-0000-0000-0000-000000000000"/>
                 </node>
