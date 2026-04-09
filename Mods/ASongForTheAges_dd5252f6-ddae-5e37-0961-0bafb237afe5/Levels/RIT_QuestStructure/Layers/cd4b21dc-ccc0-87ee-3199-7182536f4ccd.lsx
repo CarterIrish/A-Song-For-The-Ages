@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <save>
     <version major="4" minor="8" revision="0" build="500"/>
+    <region id="Layers">
+        <node id="root">
+            <children>
+                <node id="Layer">
+                    <attribute id="Object" type="guid" value="b5126105-1f9e-1f8d-2d78-f53eaf071962"/>
+                </node>
+            </children>
+        </node>
+    </region>
     <region id="MetaData">
         <node id="root">
             <attribute id="ID" type="guid" value="cd4b21dc-ccc0-87ee-3199-7182536f4ccd"/>
