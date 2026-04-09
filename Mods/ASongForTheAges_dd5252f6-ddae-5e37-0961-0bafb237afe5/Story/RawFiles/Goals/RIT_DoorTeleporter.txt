@@ -4,7 +4,7 @@ INITSECTION
 
 KBSECTION
 IF
-UseFinished(_Player, S_Door_Teleporter_TEST_000_c749ddc2-7cf8-4262-a7ee-bc69ceb9e553, 1)
+UseFinished(_Player, DOOR_Single_Dungeon_Abbey_A_Teleporter_000_8a59a7fb-b325-44cb-9d0e-19ef1135db51, 1)
 THEN
 TeleportPartiesToLevelWithMovie("RIT_QuestStructure", "", "");
 
