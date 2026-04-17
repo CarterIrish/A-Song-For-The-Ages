@@ -1,9 +1,5 @@
 <?xml version="1.0"?>
 <contentList xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <content contentuid="h0db39e6ag53a1gc981g61d1g2e626ca3bb7c" version="3">Hey, I wasnt sleeping</content>
-  <content contentuid="hf3019d4cg2cf9g0276g1e88g35dde2b80c78" version="3">I totally believe you</content>
-  <content contentuid="h07304c5bg90c9g2d7ag7032ga2a2b2b63e36" version="3">Right...</content>
-  <content contentuid="h4328f3b7ge07cga161g27c1g982b7790a4ce" version="3">No seriously, Im awake!!</content>
   <content contentuid="hb40c2746g9b18gbaadg1216g36f070c0b75d" version="6">Hey, you there...</content>
   <content contentuid="h5a3f6cd2gb606g93d9gac76g6fe0a6688b03" version="6">What do you want?</content>
   <content contentuid="h8ccf0983gf080g8afegf331g3008a1a36c2e" version="6">&lt;b&gt;Go away.&lt;/b&gt;</content>
@@ -12,39 +8,17 @@
   <content contentuid="hf64db892g6b03g5a9cg9125gaafcefd6bfe1" version="4">&lt;b&gt;NO&lt;/b&gt;</content>
   <content contentuid="h63e276e0gcb33g5e4dg6c78gb31d68c5e5a9" version="4">Ok</content>
   <content contentuid="h7e4ae732g1e76g5d83g64edg34661e0690f5" version="4">Its in that cave over there</content>
-  <content contentuid="hdaae1174ga453gc05ega02bgbbd94fcab753" version="2">Sten</content>
   <content contentuid="h86a22930gf467g2106g8900gb57412fd00c1" version="2">A Song For The Ages</content>
-  <content contentuid="hcba8ecd2g4b53g55c9g9329gba5bfef510a1" version="4">Search your surroundings for Stens lute</content>
-  <content contentuid="h1e649f2eg87a5g81d2g270bg34acec106c7b" version="2">Find the lute for Sten</content>
-  <content contentuid="h7884e5fdg073agc734gda73g71b727c3b602" version="2">Return the lute to Sten</content>
   <content contentuid="h74453ec1g590dg0f3aga6bcg9904b29e7d18" version="7">Hey, I wasn't sleeping</content>
   <content contentuid="h35ee0edag55a7g8721geeeag96633524b42e" version="7">Sure, I believe you</content>
   <content contentuid="h1d1f3cb9g8578gf1b8gca38gae3b11f4ecb5" version="7">Right...</content>
   <content contentuid="h488bc316g6ec2g1729g619fgeab514127741" version="7">No seriously, Im awake.</content>
-  <content contentuid="hb0922f94gf39fg99feg95ccgbea1bbb6816a" version="1">Raphael</content>
-  <content contentuid="h5e7f891fg181eg7f6bg32bdgff46df89294c" version="1">OG Master of the Game Design</content>
-  <content contentuid="h67ff9fd9gd10cg580cg0c59g38074007d1e4" version="2">Return the lute to Sten</content>
-  <content contentuid="h4e0bd6bcgb3eeg9240g1fa3gd23f43ceedf7" version="1">Lightning Aura Amulet</content>
-  <content contentuid="hd4959e6fg03a8gb8c8gd46fgd0871b4594e6" version="5">Stencil</content>
+  <content contentuid="hd4959e6fg03a8gb8c8gd46fgd0871b4594e6" version="4">Stencil</content>
   <content contentuid="h05a0f4a7g72f5ga1c4gdfc9g5544417fa5d7" version="3">&lt;b&gt;Hey&lt;/b&gt;, help me get my lute back.</content>
   <content contentuid="h7b1b28b4gd85cg84a6g45bcg01087edbf6be" version="2">&lt;b&gt;No, &lt;/b&gt;Im going to get food</content>
   <content contentuid="h78a8c7bdg9dc1g6a57geabbged616fee1a47" version="2">&lt;b&gt;FINE, &lt;/b&gt;where is it?</content>
   <content contentuid="h9109fa90g72f1g2ba7ga94bg598c21b0c482" version="2">Its deep in the cave &lt;b&gt;behind me&lt;/b&gt;.</content>
   <content contentuid="h167fd2c3gf779gc2a9g4e31ge38902114802" version="1">XP GIVER</content>
-  <content contentuid="hc3e4ca71g5747g1687g536bge25c4e1cde8c" version="13">Aye, if you're here for a song, I can't play you one. If not, piss off.</content>
-  <content contentuid="h1a78bc78g41a0gf7b7g6096gf18833094b62" version="13">Why are you upset?</content>
-  <content contentuid="h41a7c53cg3bfdgc4a0gc94bgb0dbf7aa2168" version="13">No need to be rude.</content>
-  <content contentuid="h21f32846g0d64g87a1g7ac4g407b6d645f25" version="13">&lt;i&gt;(Piss off)&lt;/i&gt;</content>
-  <content contentuid="h75b5b170gc59eg2cb6gcd03gf742fc0e4742" version="13">Upset?! Well, my lutes been stolen; my dearest Betsy has been ripped from my arms by an ugly, nasty, bugbear.</content>
-  <content contentuid="h83f070b7g71bdg98ddg91fbgcc9c2d461455" version="13">He called my music bad and took her from me! That fleabag doesn't know music if it BIT HIM IN THE ARSE!</content>
-  <content contentuid="h07465a4fg9f18g9fd0g5b06gacd0cc1349c2" version="13">Well, if you had the day I've HAD? You'd be upset too. Though, you do look and smell quite bad, that appears to be a normal thing for you lot.</content>
-  <content contentuid="hf28cab75gd90eg45deg577cg39a37224655f" version="12">Do you need some help?</content>
-  <content contentuid="hcdcfa1bcg080ag99deg3e13g6de8fb67c712" version="12">Sucks to be you.</content>
-  <content contentuid="h5089d204g2d98g6bb5gfa37g5daf8367a749" version="12"> Hmm, maybe you can assist me. If you confront him with me, he will be so scared that he hands the lute back! HAHA! Full proof plan! I have some treasures from my village that I could give you for your troubles. How does that sound?</content>
-  <content contentuid="hc71ff28cg4438gd187g02e4gc5e0d1f07920" version="12">Sure, let's do this!</content>
-  <content contentuid="h40c51fc6g0c3cgad80g9f0agcc32597d9e03" version="12">Nevermind. </content>
-  <content contentuid="h90dbf435g5a45g3f16gbb63g9ff9270a55c1" version="12">AHAHA! You're one of the good ones, I see! Well then, I last remember seeing him and his band wandering around northwest of the crash site. While we travel, I want to get your thoughts on a potential song I am working on!</content>
-  <content contentuid="h774f4dc8g4231gc585gbaa8ge64188e5bf86" version="12">You bastard! You can't get a man's hopes up and then spit and stomp on it. Bug off then. If you actually care, then come back and find me. No good travelers, not good for anything.</content>
   <content contentuid="hedb49387gdd91g3828gb63eg9588dccdf7a9" version="1">No need to be rude.</content>
   <content contentuid="hc3859b0agd59dge340g5ca4gf3b45e8404cf" version="1">Sucks to be you.</content>
   <content contentuid="hc353a469geba5g45e4g3f73g4a07e1e0bc41" version="1"> Hmm, maybe you can assist me. If you confront him with me, he will be so scared that he hands the lute back! HAHA! Full proof plan! I have some treasures from my village that I could give you for your troubles. How does that sound?</content>
@@ -59,22 +33,30 @@
   <content contentuid="h3a03d945g8b0fg6e58g2ad0gcfd4f142dab1" version="1">He called my music bad and took her from me! That fleabag doesn't know music if it BIT HIM IN THE ARSE!</content>
   <content contentuid="hc1398940gc5aega239gb7aeg90a1641a43bb" version="1">Upset?! Well, my lutes been stolen; my dearest Betsy has been ripped from my arms by an ugly, nasty, bugbear.</content>
   <content contentuid="h93db8335gbf4bga549g8a95g6dffba6395ef" version="1">Well, if you had the day I've HAD? You'd be upset too. Though, you do look and smell quite bad, that appears to be a normal thing for you lot.</content>
-  <content contentuid="h5e052a9eg439dgaa70g1325gc8ef89bbab47" version="2">No need to be rude.</content>
-  <content contentuid="h29cf575fgbfffgb4a8gce41gf3d3ce8ae74b" version="2">Sucks to be you.</content>
-  <content contentuid="hf26853eeg8b31g9ba0g7649ga4e979ca56e9" version="2"> Hmm, maybe you can assist me. If you confront him with me, he will be so scared that he hands the lute back! HAHA! Full proof plan! I have some treasures from my village that I could give you for your troubles. How does that sound?</content>
-  <content contentuid="h171f29ecg3ff3ge651g9fdega1f0d9509a76" version="2">Do you need some help?</content>
-  <content contentuid="hc46c88d1g6bc7gc990g54degce5658cb1f5a" version="2">Sure, let's do this!</content>
-  <content contentuid="h9a1be575gb26fg1468g94fag66103ce3c5e1" version="2">Why are you upset?</content>
-  <content contentuid="h17282da3g7620g47f7g6ee4g2fd03cbc4d77" version="2">Aye, if you're here for a song, I can't play you one. If not, piss off.</content>
-  <content contentuid="hc1183abag0aebg051dg0e6egdf56f6834b17" version="2">You bastard! You can't get a man's hopes up and then spit and stomp on it. Bug off then. If you actually care, then come back and find me. No good travelers, not good for anything.</content>
-  <content contentuid="ha6e9d5f5ga2b9gd59ag1262g4b8f9cde297d" version="2">&lt;i&gt;(Piss off)&lt;/i&gt;</content>
-  <content contentuid="h3e25049bgaa2cg41beg20d5gfcfa397c5851" version="2">Nevermind. </content>
-  <content contentuid="h91b1ff7fg718bgd7f3g3efagf33f7e83492a" version="2">AHAHA! You're one of the good ones, I see! Well then, I last remember seeing him and his band wandering around northwest of the crash site. While we travel, I want to get your thoughts on a potential song I am working on!</content>
-  <content contentuid="h551e9b5bgab83gba99gc334gb88b2550cd54" version="2">He called my music bad and took her from me! That fleabag doesn't know music if it BIT HIM IN THE ARSE!</content>
-  <content contentuid="hcc1073edg2ebagdb9bgc422g03e807c444d0" version="2">Upset?! Well, my lutes been stolen; my dearest Betsy has been ripped from my arms by an ugly, nasty, bugbear.</content>
-  <content contentuid="h814bd095g5ccag7c15gebbbg7cdaed2bbff9" version="2">Well, if you had the day I've HAD? You'd be upset too. Though, you do look and smell quite bad, that appears to be a normal thing for you lot.</content>
-  <content contentuid="h1a7b50abg1597g060cga196g3c5903ac4427" version="1">Test</content>
-  <content contentuid="hb8b7b4e2g74d6g703fg1cb2g6e8fa9ebab63" version="1">Stencil</content>
+  <content contentuid="h5e052a9eg439dgaa70g1325gc8ef89bbab47" version="1">No need to be rude.</content>
+  <content contentuid="h29cf575fgbfffgb4a8gce41gf3d3ce8ae74b" version="1">Sucks to be you.</content>
+  <content contentuid="hf26853eeg8b31g9ba0g7649ga4e979ca56e9" version="1"> Hmm, maybe you can assist me. If you confront him with me, he will be so scared that he hands the lute back! HAHA! Full proof plan! I have some treasures from my village that I could give you for your troubles. How does that sound?</content>
+  <content contentuid="h171f29ecg3ff3ge651g9fdega1f0d9509a76" version="1">Do you need some help?</content>
+  <content contentuid="hc46c88d1g6bc7gc990g54degce5658cb1f5a" version="1">Sure, let's do this!</content>
+  <content contentuid="h9a1be575gb26fg1468g94fag66103ce3c5e1" version="1">Why are you upset?</content>
+  <content contentuid="h17282da3g7620g47f7g6ee4g2fd03cbc4d77" version="1">Aye, if you're here for a song, I can't play you one. If not, piss off.</content>
+  <content contentuid="hc1183abag0aebg051dg0e6egdf56f6834b17" version="1">You bastard! You can't get a man's hopes up and then spit and stomp on it. Bug off then. If you actually care, then come back and find me. No good travelers, not good for anything.</content>
+  <content contentuid="ha6e9d5f5ga2b9gd59ag1262g4b8f9cde297d" version="1">&lt;i&gt;(Piss off)&lt;/i&gt;</content>
+  <content contentuid="h3e25049bgaa2cg41beg20d5gfcfa397c5851" version="1">Nevermind. </content>
+  <content contentuid="h91b1ff7fg718bgd7f3g3efagf33f7e83492a" version="1">AHAHA! You're one of the good ones, I see! Well then, I last remember seeing him and his band wandering around northwest of the crash site. While we travel, I want to get your thoughts on a potential song I am working on!</content>
+  <content contentuid="h551e9b5bgab83gba99gc334gb88b2550cd54" version="1">He called my music bad and took her from me! That fleabag doesn't know music if it BIT HIM IN THE ARSE!</content>
+  <content contentuid="hcc1073edg2ebagdb9bgc422g03e807c444d0" version="1">Upset?! Well, my lutes been stolen; my dearest Betsy has been ripped from my arms by an ugly, nasty, bugbear.</content>
+  <content contentuid="h814bd095g5ccag7c15gebbbg7cdaed2bbff9" version="1">Well, if you had the day I've HAD? You'd be upset too. Though, you do look and smell quite bad, that appears to be a normal thing for you lot.</content>
+  <content contentuid="h451ab29dg6174g021eg4f73gc8daa9b60d9d" version="4" />
+  <content contentuid="h08a8142fg0d86g9601g485fg20c9365482dd" version="4" />
+  <content contentuid="h8889c613gbff6gab7ag48aagdb8a54fe93ff" version="4" />
+  <content contentuid="he7f51174ga4e0gd4adg27f9g09370d4ff469" version="4" />
+  <content contentuid="hf92923ecgefc5gf388gf059g405ed39e786a" version="4" />
+  <content contentuid="h8176c4c4g7f05g6731g58beg24810f506c87" version="6" />
+  <content contentuid="hc3245295gaf8bgd5f6gcf77g1b4efa17a15e" version="6" />
+  <content contentuid="hd04a5de5g969cgef7eg77cbg0e85a99219a2" version="4" />
+  <content contentuid="h411da345g4f64g245cgc5c9geade42f248e0" version="4" />
+  <content contentuid="hec8cb9fagd326g5708g6fb9gcc81912319ca" version="1">The best door around</content>
   <content contentuid="h1dc767a3g4c31gd714g765fg2ef2359efe28" version="8">ahh...oof...I must of gotten nicked by one of those goblins... Got me pretty good. I think you'll have to go on without me...</content>
   <content contentuid="h714bbf47gd511ga3c3g01eegbe95d97b386c" version="8">Oh shut it. Great musicians can create music without their instrument and I have a good set of pipes. I saw some of them scurry off toward that cave. Must be where ol'betsy is!</content>
   <content contentuid="h608ed963g98d7gf8e5g383dgd1a2f13640be" version="8">I will stay out here... healing my wounds... If you die I will find someone else to help me get my lute.</content>
