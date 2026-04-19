@@ -154,14 +154,3 @@ Compiled from `HintsEditor.lsx`. Hints marked *(Internal)* were flagged as inter
 - **Shift / CTRL** — select multiple Root Templates to change properties in bulk. *(Internal)*
 - Search panels: prefix a term with `!` to exclude results (e.g. `sword !human !dwarves`).
 
-## Workflow, Config & Tools *(mostly Internal)*
-
-- **LSM**: use arrows on the 'Launch Editor/Game' button to auto-launch a specific mod & level.
-- **Perforce shelving** — back up / share WIP. Press F1 for more info. See: https://sites.google.com/a/larian.com/larian-wikisite/general/p4/p4-shelving
-- **Perforce**: **CTRL+Shift+S** on a folder/file to view it in File Explorer.
-- Editor Config: set `LoadModuleCache` and `LoadLevelCache` to `false` for faster loads (unless deleting roots or finding references).
-- **Options → Save Layout** — save current panel layout.
-- Hide tutorial boxes: Game Mode → ESC → Options → Settings → Gameplay → 'Show Tutorial Boxes'.
-- Use the **grid panel** options to measure distances between two points.
-- Use the **Current Selection** panel to manage what you are selecting.
-- Report crashes/asserts in Slack `#editor-problems` (repro steps, assert message, latest version). Use `+` → 'code or text snippet' for crash contents.
