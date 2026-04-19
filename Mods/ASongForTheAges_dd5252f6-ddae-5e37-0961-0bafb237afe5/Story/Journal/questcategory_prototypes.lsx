@@ -6,7 +6,7 @@
             <children>
                 <node id="QuestCategory">
                     <attribute id="CategoryID" type="FixedString" value="Main Quest"/>
-                    <attribute id="Description" type="TranslatedString" handle="hc45e357egbd60g3be6g9336g4e4f876a49ce" version="2"/>
+                    <attribute id="Description" type="TranslatedString" handle="hc45e357egbd60g3be6g9336g4e4f876a49ce" version="8"/>
                     <attribute id="QuestCategoryGuid" type="guid" value="00000000-0000-0000-0000-000000000000"/>
                     <attribute id="SortingPriority" type="int32" value="0"/>
                 </node>
