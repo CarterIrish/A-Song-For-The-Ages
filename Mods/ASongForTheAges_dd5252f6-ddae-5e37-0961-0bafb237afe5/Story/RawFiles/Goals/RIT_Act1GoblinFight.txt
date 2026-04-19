@@ -1,0 +1,48 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+DB_SFAGoblins((CHARACTER)RIT_GoblinGuard_000_ec6a16b8-b498-4055-8468-6dd74217f48e);
+DB_SFAGoblins((CHARACTER)RIT_GoblinGuard_001_759e2b80-e185-425b-8712-0da04ff42efe);
+KBSECTION
+// Trigger combat
+IF
+EnteredTrigger(_Player, (TRIGGER)RIT_GoblinFight_Act1_EventTrigger_7948f6aa-976c-485c-890b-1d90b1d3c94b)
+AND
+DB_SFAGoblins(_Goblin)
+AND
+DB_Players(_Player)
+AND
+NOT DB_SFAGoblinFightStarted(1)
+THEN
+DB_SFAGoblinFightStarted(1);
+QuestUpdate("RIT_ASongForTheAges", "RIT_KillGoblins_Step");
+SetFaction(_Goblin, (FACTION)Evil_4be9261a-e481-8d9d-3528-f36956a19b17);
+
+// Check if this is the last goblin, THEN remove it
+IF
+KilledBy(_Goblin, _AttackOwner, _Attacker, _StoryActionID)
+AND
+DB_SFAGoblins(_Goblin)
+AND
+SysCount("DB_SFAGoblins", 1, _Count)
+AND
+_Count == 1
+THEN
+NOT DB_SFAGoblins(_Goblin);
+QuestUpdate("RIT_ASongForTheAges", "RIT_SpeakToDafodil_Step");
+
+// Remove non-last goblins
+IF
+KilledBy(_Goblin, _AttackOwner, _Attacker, _StoryActionID)
+AND
+DB_SFAGoblins(_Goblin)
+AND
+SysCount("DB_SFAGoblins", 1, _Count)
+AND
+_Count > 1
+THEN
+NOT DB_SFAGoblins(_Goblin);
+EXITSECTION
+
+ENDEXITSECTION
+ParentTargetEdge "__Start"
