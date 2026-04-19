@@ -1,0 +1,19 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+DB_SFAGoblins((CHARACTER)RIT_GoblinGuard_000_ec6a16b8-b498-4055-8468-6dd74217f48e);
+DB_SFAGoblins((CHARACTER)RIT_GoblinGuard_001_759e2b80-e185-425b-8712-0da04ff42efe);
+KBSECTION
+IF
+EnteredTrigger(_Player, (TRIGGER)RIT_GoblinFight_Act1_EventTrigger_7948f6aa-976c-485c-890b-1d90b1d3c94b)
+AND
+DB_SFAGoblins(_Goblin)
+AND
+DB_Players(_Player)
+THEN
+SetFaction(_Goblin, (FACTION)Evil_4be9261a-e481-8d9d-3528-f36956a19b17);
+//EnterCombat(_Goblin, _Player);
+EXITSECTION
+
+ENDEXITSECTION
+ParentTargetEdge "__Start"
