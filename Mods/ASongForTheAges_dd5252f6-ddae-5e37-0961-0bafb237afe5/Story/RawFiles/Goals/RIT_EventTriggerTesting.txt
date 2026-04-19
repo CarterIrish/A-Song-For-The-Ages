@@ -1,0 +1,20 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+DB_SFAGoblins((CHARACTER)RIT_GoblinGuard_000_ec6a16b8-b498-4055-8468-6dd74217f48e);
+DB_SFAGoblins((CHARACTER)RIT_GoblinGuard_001_759e2b80-e185-425b-8712-0da04ff42efe);
+KBSECTION
+IF
+EnteredTrigger(_Player, (TRIGGER)RIT_GoblinFight_Act1_EventTrigger_7948f6aa-976c-485c-890b-1d90b1d3c94b)
+AND
+DB_SFAGoblins(_goblin)
+AND
+GetDisplayName(_goblin, _translatedStringKey)
+AND
+ResolveTranslatedString(_translatedStringKey, _displayName)
+THEN
+DebugText(_Player, _displayName);
+EXITSECTION
+
+ENDEXITSECTION
+ParentTargetEdge "__Start"
