@@ -16,7 +16,7 @@
                     <children>
                         <node id="QuestStep">
                             <attribute id="Achievement" type="FixedString" value=""/>
-                            <attribute id="Description" type="TranslatedString" handle="h451ab29dg6174g021eg4f73gc8daa9b60d9d" version="2"/>
+                            <attribute id="Description" type="TranslatedString" handle="h451ab29dg6174g021eg4f73gc8daa9b60d9d" version="4"/>
                             <attribute id="DevComment" type="FixedString" value=""/>
                             <attribute id="DialogFlagGUID" type="guid" value="0ad1572a-7d61-4492-9158-839aad788167"/>
                             <attribute id="ExperienceReward" type="guid" value="00000000-0000-0000-0000-000000000000"/>
@@ -38,7 +38,7 @@
                         </node>
                         <node id="QuestStep">
                             <attribute id="Achievement" type="FixedString" value=""/>
-                            <attribute id="Description" type="TranslatedString" handle="h08a8142fg0d86g9601g485fg20c9365482dd" version="2"/>
+                            <attribute id="Description" type="TranslatedString" handle="h08a8142fg0d86g9601g485fg20c9365482dd" version="4"/>
                             <attribute id="DevComment" type="FixedString" value=""/>
                             <attribute id="DialogFlagGUID" type="guid" value="5f77025f-d2a1-4da1-ad58-5700c79558d1"/>
                             <attribute id="ExperienceReward" type="guid" value="00000000-0000-0000-0000-000000000000"/>
@@ -60,7 +60,7 @@
                         </node>
                         <node id="QuestStep">
                             <attribute id="Achievement" type="FixedString" value=""/>
-                            <attribute id="Description" type="TranslatedString" handle="h8889c613gbff6gab7ag48aagdb8a54fe93ff" version="2"/>
+                            <attribute id="Description" type="TranslatedString" handle="h8889c613gbff6gab7ag48aagdb8a54fe93ff" version="6"/>
                             <attribute id="DevComment" type="FixedString" value=""/>
                             <attribute id="DialogFlagGUID" type="guid" value="a1333ed5-9521-4583-8ec2-992085b7f9b9"/>
                             <attribute id="ExperienceReward" type="guid" value="00000000-0000-0000-0000-000000000000"/>
@@ -82,7 +82,7 @@
                         </node>
                         <node id="QuestStep">
                             <attribute id="Achievement" type="FixedString" value=""/>
-                            <attribute id="Description" type="TranslatedString" handle="h8176c4c4g7f05g6731g58beg24810f506c87" version="4"/>
+                            <attribute id="Description" type="TranslatedString" handle="h8176c4c4g7f05g6731g58beg24810f506c87" version="6"/>
                             <attribute id="DevComment" type="FixedString" value=""/>
                             <attribute id="DialogFlagGUID" type="guid" value="40758ced-5ddb-4bf8-869a-46406a71c8b7"/>
                             <attribute id="ExperienceReward" type="guid" value="00000000-0000-0000-0000-000000000000"/>
@@ -104,7 +104,7 @@
                         </node>
                         <node id="QuestStep">
                             <attribute id="Achievement" type="FixedString" value=""/>
-                            <attribute id="Description" type="TranslatedString" handle="he7f51174ga4e0gd4adg27f9g09370d4ff469" version="2"/>
+                            <attribute id="Description" type="TranslatedString" handle="he7f51174ga4e0gd4adg27f9g09370d4ff469" version="4"/>
                             <attribute id="DevComment" type="FixedString" value=""/>
                             <attribute id="DialogFlagGUID" type="guid" value="8c48a8b4-413a-41b7-828d-9a1f85c676dd"/>
                             <attribute id="ExperienceReward" type="guid" value="00000000-0000-0000-0000-000000000000"/>
@@ -126,7 +126,7 @@
                         </node>
                         <node id="QuestStep">
                             <attribute id="Achievement" type="FixedString" value=""/>
-                            <attribute id="Description" type="TranslatedString" handle="h411da345g4f64g245cgc5c9geade42f248e0" version="2"/>
+                            <attribute id="Description" type="TranslatedString" handle="h411da345g4f64g245cgc5c9geade42f248e0" version="4"/>
                             <attribute id="DevComment" type="FixedString" value=""/>
                             <attribute id="DialogFlagGUID" type="guid" value="0f3ff316-28b9-424d-b440-3e7befb2fb40"/>
                             <attribute id="ExperienceReward" type="guid" value="00000000-0000-0000-0000-000000000000"/>
@@ -148,7 +148,7 @@
                         </node>
                         <node id="QuestStep">
                             <attribute id="Achievement" type="FixedString" value=""/>
-                            <attribute id="Description" type="TranslatedString" handle="hc3245295gaf8bgd5f6gcf77g1b4efa17a15e" version="4"/>
+                            <attribute id="Description" type="TranslatedString" handle="hc3245295gaf8bgd5f6gcf77g1b4efa17a15e" version="6"/>
                             <attribute id="DevComment" type="FixedString" value=""/>
                             <attribute id="DialogFlagGUID" type="guid" value="5ef90c4e-d252-4c58-9f1e-7ce369252565"/>
                             <attribute id="ExperienceReward" type="guid" value="00000000-0000-0000-0000-000000000000"/>
@@ -170,7 +170,7 @@
                         </node>
                         <node id="QuestStep">
                             <attribute id="Achievement" type="FixedString" value=""/>
-                            <attribute id="Description" type="TranslatedString" handle="hd04a5de5g969cgef7eg77cbg0e85a99219a2" version="2"/>
+                            <attribute id="Description" type="TranslatedString" handle="hd04a5de5g969cgef7eg77cbg0e85a99219a2" version="4"/>
                             <attribute id="DevComment" type="FixedString" value=""/>
                             <attribute id="DialogFlagGUID" type="guid" value="48a9cd0d-5242-4214-bf2d-7372fb07b00b"/>
                             <attribute id="ExperienceReward" type="guid" value="00000000-0000-0000-0000-000000000000"/>
@@ -192,33 +192,11 @@
                         </node>
                         <node id="QuestStep">
                             <attribute id="Achievement" type="FixedString" value=""/>
-                            <attribute id="Description" type="TranslatedString" handle="ls::TranslatedStringRepository::s_HandleUnknown" version="0"/>
-                            <attribute id="DevComment" type="FixedString" value=""/>
-                            <attribute id="DialogFlagGUID" type="guid" value="e0c4328a-b304-4e21-90e6-425e2491f298"/>
-                            <attribute id="ExperienceReward" type="guid" value="00000000-0000-0000-0000-000000000000"/>
-                            <attribute id="ID" type="FixedString" value=""/>
-                            <attribute id="LevelOverride" type="int32" value="0"/>
-                            <attribute id="Objective" type="FixedString" value="Confront Trexel"/>
-                            <attribute id="QuestRewardCount" type="int32" value="0"/>
-                            <attribute id="QuestRewardLevel" type="int32" value="0"/>
-                            <attribute id="QuestStepGuid" type="guid" value="ac37d0a0-4b87-4075-9344-821ae2dce47d"/>
-                            <attribute id="QuestTitleOverride" type="TranslatedString" handle="ls::TranslatedStringRepository::s_HandleUnknown" version="0"/>
-                            <attribute id="ReputationGain" type="int32" value="0"/>
-                            <attribute id="RewardAdditionalGold " type="guid" value="00000000-0000-0000-0000-000000000000"/>
-                            <attribute id="RewardAdditionalOwnerGUID" type="guid" value="00000000-0000-0000-0000-000000000000"/>
-                            <attribute id="RewardAdditionalOwnerLevelName" type="LSString" value=""/>
-                            <attribute id="RewardAdditionalOwnerName" type="LSString" value=""/>
-                            <attribute id="RewardAdditionalTreasureTable" type="FixedString" value=""/>
-                            <attribute id="StatTriggerGUID" type="guid" value="00000000-0000-0000-0000-000000000000"/>
-                            <attribute id="UnlockDisable" type="int32" value="0"/>
-                        </node>
-                        <node id="QuestStep">
-                            <attribute id="Achievement" type="FixedString" value=""/>
-                            <attribute id="Description" type="TranslatedString" handle="hf92923ecgefc5gf388gf059g405ed39e786a" version="2"/>
+                            <attribute id="Description" type="TranslatedString" handle="hf92923ecgefc5gf388gf059g405ed39e786a" version="6"/>
                             <attribute id="DevComment" type="FixedString" value=""/>
                             <attribute id="DialogFlagGUID" type="guid" value="de393992-bfae-4cd6-94c0-9ece4ee25a34"/>
                             <attribute id="ExperienceReward" type="guid" value="00000000-0000-0000-0000-000000000000"/>
-                            <attribute id="ID" type="FixedString" value="RIT_ReturnToBrokenString_Step"/>
+                            <attribute id="ID" type="FixedString" value="RIT_ReturnToBrokenstring_Step"/>
                             <attribute id="LevelOverride" type="int32" value="0"/>
                             <attribute id="Objective" type="FixedString" value="Return to Dafodil Brokenstring"/>
                             <attribute id="QuestRewardCount" type="int32" value="0"/>
@@ -236,16 +214,16 @@
                         </node>
                         <node id="QuestStep">
                             <attribute id="Achievement" type="FixedString" value=""/>
-                            <attribute id="Description" type="TranslatedString" handle="ls::TranslatedStringRepository::s_HandleUnknown" version="0"/>
+                            <attribute id="Description" type="TranslatedString" handle="he04f6209gfa26gf4f1g89e7gfce0be24f1b2" version="2"/>
                             <attribute id="DevComment" type="FixedString" value=""/>
-                            <attribute id="DialogFlagGUID" type="guid" value="28e040c5-debb-4b2b-8490-b8d45011500d"/>
+                            <attribute id="DialogFlagGUID" type="guid" value="1c58bf71-4b72-4263-ad58-1366fe105c60"/>
                             <attribute id="ExperienceReward" type="guid" value="00000000-0000-0000-0000-000000000000"/>
-                            <attribute id="ID" type="FixedString" value="RIT_ReturnTheLute_Step"/>
+                            <attribute id="ID" type="FixedString" value="RIT_SpeakToBrokenstring_Step"/>
                             <attribute id="LevelOverride" type="int32" value="0"/>
                             <attribute id="Objective" type="FixedString" value="Return to Dafodil Brokenstring"/>
                             <attribute id="QuestRewardCount" type="int32" value="0"/>
                             <attribute id="QuestRewardLevel" type="int32" value="0"/>
-                            <attribute id="QuestStepGuid" type="guid" value="475a5bde-7c6c-4aee-a9ae-6038166126d6"/>
+                            <attribute id="QuestStepGuid" type="guid" value="687990c1-36f9-4ead-8df9-18b3e7f93e0a"/>
                             <attribute id="QuestTitleOverride" type="TranslatedString" handle="ls::TranslatedStringRepository::s_HandleUnknown" version="0"/>
                             <attribute id="ReputationGain" type="int32" value="0"/>
                             <attribute id="RewardAdditionalGold " type="guid" value="00000000-0000-0000-0000-000000000000"/>
