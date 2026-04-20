@@ -1,9 +1,21 @@
 param(
-    [Parameter(Mandatory = $true, HelpMessage = "Please provide a file path to the BG3 data directory.")]
+    [Parameter(Mandatory = $false)]
     [string]$BG3DataPath
 )
 
-Write-Host $BG3DataPath
+$configPath = "bg3-setup.config.json"
+
+# Load path from config if not provided
+if (-not $BG3DataPath) {
+    if (Test-Path $configPath) {
+        $config = Get-Content $configPath | ConvertFrom-Json
+        $BG3DataPath = $config.BG3DataPath
+        Write-Host "Loaded BG3DataPath from config: $BG3DataPath" -ForegroundColor Cyan
+    }
+    else {
+        $BG3DataPath = Read-Host "Enter your BG3 Data path (e.g. G:\SteamLibrary\...\Baldurs Gate 3\Data)"
+    }
+}
 
 $ErrorActionPreference = "Stop"
 
@@ -23,6 +35,11 @@ if (-not (Test-Path $BG3DataPath)) {
     Write-Host "Please verify your BG3 install path and try again." -ForegroundColor Yellow
     exit 1
 }
+
+# Save path to config only after confirming it is valid
+$config = @{ BG3DataPath = $BG3DataPath }
+$config | ConvertTo-Json | Set-Content $configPath
+Write-Host "Saved BG3DataPath to $configPath" -ForegroundColor Gray
 
 Write-Host "BG3 Data Path: $BG3DataPath" -ForegroundColor Green
 
