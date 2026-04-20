@@ -52,13 +52,11 @@ try {
     # Make new file dirs if they arent there
     $null = New-Item -ItemType Directory -Force -Path "$BG3DataPath\Mods"
     $null = New-Item -ItemType Directory -Force -Path "$BG3DataPath\Editor\Mods"
-    $null = New-Item -ItemType Directory -Force -Path "$BG3DataPath\Projects"
     $null = New-Item -ItemType Directory -Force -Path "$BG3DataPath\Public"
 
     $sources = @{
         "Mods\$ModUUID"        = "$BG3DataPath\Mods\"
         "Editor\Mods\$ModUUID" = "$BG3DataPath\Editor\Mods\"
-        "Projects\$ModUUID"    = "$BG3DataPath\Projects\"
         "Public\$ModUUID"      = "$BG3DataPath\Public\"
     }
 
@@ -87,17 +85,22 @@ catch {
 # Step 2: Remove real folders from Git clone (replace with junctions)
 Write-Host "`n[Step 2/4] Removing real files from Git Clone..." -ForegroundColor Yellow
 try {
-    $foldersToRemove = @(
-        "Mods\$ModUUID",
-        "Editor\Mods\$ModUUID",
-        "Projects\$ModUUID",
-        "Public\$ModUUID"
-    )
+    $foldersToRemove = @{
+        "Mods\$ModUUID"        = "$BG3DataPath\Mods\$ModUUID"
+        "Editor\Mods\$ModUUID" = "$BG3DataPath\Editor\Mods\$ModUUID"
+        "Public\$ModUUID"      = "$BG3DataPath\Public\$ModUUID"
+    }
 
-    foreach ($folder in $foldersToRemove) {
+    foreach ($folder in $foldersToRemove.Keys) {
+        $target = $foldersToRemove[$folder]
         $existing = Get-Item $folder -ErrorAction SilentlyContinue
+
         if ($existing -and $existing.LinkType -eq "Junction") {
             Write-Host "    - Skipping removal of $folder (already a junction)" -ForegroundColor Gray
+        }
+        elseif (-not (Test-Path $target)) {
+            Write-Host "    - Skipping removal of $folder (BG3 Data target not found: $target)" -ForegroundColor Red
+            Write-Host "      WARNING: Cannot safely remove repo folder without a valid junction target." -ForegroundColor Red
         }
         else {
             Write-Host "    - Removing $folder..." -ForegroundColor Gray
@@ -119,7 +122,6 @@ try {
     $junctions = @{
         "Mods\$ModUUID"        = "$BG3DataPath\Mods\$ModUUID"
         "Editor\Mods\$ModUUID" = "$BG3DataPath\Editor\Mods\$ModUUID"
-        "Projects\$ModUUID"    = "$BG3DataPath\Projects\$ModUUID"
         "Public\$ModUUID"      = "$BG3DataPath\Public\$ModUUID"
     }
 
@@ -148,19 +150,16 @@ catch {
 Write-Host "`n[Step 4/4] Verifying Setup..." -ForegroundColor Cyan
 $modsJunction = Get-Item "Mods\$ModUUID"
 $editorJunction = Get-Item "Editor\Mods\$ModUUID"
-$projectsJunction = Get-Item "Projects\$ModUUID"
 $publicJunction = Get-Item "Public\$ModUUID"
 
 if ($modsJunction.LinkType -eq "Junction" -and
     $editorJunction.LinkType -eq "Junction" -and
-    $projectsJunction.LinkType -eq "Junction" -and
     $publicJunction.LinkType -eq "Junction") {
 
     Write-Host "`nSuccess! All junctions were created properly" -ForegroundColor Green
     Write-Host "`nJunction Details:" -ForegroundColor Gray
     Write-Host "  Mods     -> $($modsJunction.Target)" -ForegroundColor Gray
     Write-Host "  Editor   -> $($editorJunction.Target)" -ForegroundColor Gray
-    Write-Host "  Projects -> $($projectsJunction.Target)" -ForegroundColor Gray
     Write-Host "  Public   -> $($publicJunction.Target)" -ForegroundColor Gray
 
     Write-Host "`nNext Steps:" -ForegroundColor Cyan
