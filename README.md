@@ -9,7 +9,7 @@ A Song For The Ages for Baldurs Gate 3
 
 # Development Setup
 
-To work on this mod with the BG3 Toolkit, you need to create junctions that link your git repository to BG3's Data folder.
+To work on this mod with the BG3 Toolkit, you need to create junctions that link your git repository to BG3's Data folder every time you clone the repo.
 
 ## Prerequisites
 - Baldur's Gate 3 installed
