@@ -70,7 +70,7 @@
                                                 "TagText" : {
                                                    "handle" : "h1dc767a3g4c31gd714g765fg2ef2359efe28",
                                                    "type" : "TranslatedString",
-                                                   "version" : 8
+                                                   "version" : 9
                                                 },
                                                 "stub" : {"type" : "bool", "value" : true}
                                              }
@@ -83,17 +83,7 @@
                         ],
                         "Tags" : [ {} ],
                         "UUID" : {"type" : "FixedString", "value" : "24779d59-d001-436b-9416-6bdab1209864"},
-                        "checkflags" : [
-                           {
-                              "flaggroup" : [
-                                 {
-                                    "flag" : [
-                                       {
-                                          "UUID" : {"type" : "FixedString", "value" : "6e4b66e9-0f72-5171-04ba-441108b45b0e"},"value" : {"type" : "bool", "value" : false}}
-                                    ],"type" : {"type" : "FixedString", "value" : "Global"}}
-                              ]
-                           }
-                        ],
+                        "checkflags" : [ {} ],
                         "children" : [
                            {
                               "child" : [
@@ -259,7 +249,7 @@
                                                 "TagText" : {
                                                    "handle" : "h714bbf47gd511ga3c3g01eegbe95d97b386c",
                                                    "type" : "TranslatedString",
-                                                   "version" : 8
+                                                   "version" : 9
                                                 },
                                                 "stub" : {"type" : "bool", "value" : true}
                                              }
@@ -272,17 +262,7 @@
                         ],
                         "Tags" : [ {} ],
                         "UUID" : {"type" : "FixedString", "value" : "25ddf24c-1308-4986-80e7-0317b525b944"},
-                        "checkflags" : [
-                           {
-                              "flaggroup" : [
-                                 {
-                                    "flag" : [
-                                       {
-                                          "UUID" : {"type" : "FixedString", "value" : "6e4b66e9-0f72-5171-04ba-441108b45b0e"},"value" : {"type" : "bool", "value" : false}}
-                                    ],"type" : {"type" : "FixedString", "value" : "Global"}}
-                              ]
-                           }
-                        ],
+                        "checkflags" : [ {} ],
                         "children" : [
                            {
                               "child" : [
@@ -442,7 +422,7 @@
                                                 "TagText" : {
                                                    "handle" : "h608ed963g98d7gf8e5g383dgd1a2f13640be",
                                                    "type" : "TranslatedString",
-                                                   "version" : 8
+                                                   "version" : 9
                                                 },
                                                 "stub" : {"type" : "bool", "value" : true}
                                              }
@@ -455,17 +435,7 @@
                         ],
                         "Tags" : [ {} ],
                         "UUID" : {"type" : "FixedString", "value" : "2d4ba01a-a6eb-463f-a924-08725323a012"},
-                        "checkflags" : [
-                           {
-                              "flaggroup" : [
-                                 {
-                                    "flag" : [
-                                       {
-                                          "UUID" : {"type" : "FixedString", "value" : "6e4b66e9-0f72-5171-04ba-441108b45b0e"},"value" : {"type" : "bool", "value" : false}}
-                                    ],"type" : {"type" : "FixedString", "value" : "Global"}}
-                              ]
-                           }
-                        ],
+                        "checkflags" : [ {} ],
                         "children" : [ {} ],
                         "constructor" : {"type" : "FixedString", "value" : "TagAnswer"},
                         "editorData" : [
@@ -620,7 +590,7 @@
                                                 "TagText" : {
                                                    "handle" : "hc9f74b5cgd150g6bbfg20bcgaf3ee174210e",
                                                    "type" : "TranslatedString",
-                                                   "version" : 8
+                                                   "version" : 9
                                                 },
                                                 "stub" : {"type" : "bool", "value" : true}
                                              }
@@ -638,17 +608,7 @@
                               "ValidatedHasValue" : {"type" : "bool", "value" : false}
                            }
                         ],
-                        "checkflags" : [
-                           {
-                              "flaggroup" : [
-                                 {
-                                    "flag" : [
-                                       {
-                                          "UUID" : {"type" : "FixedString", "value" : "6e4b66e9-0f72-5171-04ba-441108b45b0e"},"value" : {"type" : "bool", "value" : false}}
-                                    ],"type" : {"type" : "FixedString", "value" : "Global"}}
-                              ]
-                           }
-                        ],
+                        "checkflags" : [ {} ],
                         "children" : [
                            {
                               "child" : [
@@ -919,7 +879,7 @@
                                                 "TagText" : {
                                                    "handle" : "h3a7e001fg2a2bg43bag852ag87e9fe178cd8",
                                                    "type" : "TranslatedString",
-                                                   "version" : 8
+                                                   "version" : 9
                                                 },
                                                 "stub" : {"type" : "bool", "value" : true}
                                              }
@@ -937,17 +897,7 @@
                               "ValidatedHasValue" : {"type" : "bool", "value" : false}
                            }
                         ],
-                        "checkflags" : [
-                           {
-                              "flaggroup" : [
-                                 {
-                                    "flag" : [
-                                       {
-                                          "UUID" : {"type" : "FixedString", "value" : "6e4b66e9-0f72-5171-04ba-441108b45b0e"},"value" : {"type" : "bool", "value" : false}}
-                                    ],"type" : {"type" : "FixedString", "value" : "Global"}}
-                              ]
-                           }
-                        ],
+                        "checkflags" : [ {} ],
                         "children" : [
                            {
                               "child" : [
@@ -1111,7 +1061,7 @@
                                                 "TagText" : {
                                                    "handle" : "hf32ba34dgb57bg12e1g01f8g982818e0a165",
                                                    "type" : "TranslatedString",
-                                                   "version" : 8
+                                                   "version" : 9
                                                 },
                                                 "stub" : {"type" : "bool", "value" : true}
                                              }
@@ -1124,17 +1074,7 @@
                         ],
                         "Tags" : [ {} ],
                         "UUID" : {"type" : "FixedString", "value" : "93254959-4d4c-40bd-bd40-e35f1e3aa701"},
-                        "checkflags" : [
-                           {
-                              "flaggroup" : [
-                                 {
-                                    "flag" : [
-                                       {
-                                          "UUID" : {"type" : "FixedString", "value" : "6e4b66e9-0f72-5171-04ba-441108b45b0e"},"value" : {"type" : "bool", "value" : false}}
-                                    ],"type" : {"type" : "FixedString", "value" : "Global"}}
-                              ]
-                           }
-                        ],
+                        "checkflags" : [ {} ],
                         "children" : [ {} ],
                         "constructor" : {"type" : "FixedString", "value" : "TagAnswer"},
                         "editorData" : [
@@ -1288,7 +1228,7 @@
                                                 "TagText" : {
                                                    "handle" : "h7b06633dgd5d0g6b47gb67fg3205dfaecc64",
                                                    "type" : "TranslatedString",
-                                                   "version" : 8
+                                                   "version" : 9
                                                 },
                                                 "stub" : {"type" : "bool", "value" : true}
                                              }
@@ -1301,17 +1241,7 @@
                         ],
                         "Tags" : [ {} ],
                         "UUID" : {"type" : "FixedString", "value" : "acfbc5f7-57c9-4daf-a307-1d63e185a25f"},
-                        "checkflags" : [
-                           {
-                              "flaggroup" : [
-                                 {
-                                    "flag" : [
-                                       {
-                                          "UUID" : {"type" : "FixedString", "value" : "6e4b66e9-0f72-5171-04ba-441108b45b0e"},"value" : {"type" : "bool", "value" : false}}
-                                    ],"type" : {"type" : "FixedString", "value" : "Global"}}
-                              ]
-                           }
-                        ],
+                        "checkflags" : [ {} ],
                         "children" : [ {} ],
                         "constructor" : {"type" : "FixedString", "value" : "TagAnswer"},
                         "editorData" : [
@@ -1465,7 +1395,7 @@
                                                 "TagText" : {
                                                    "handle" : "h2ca98b61g8bc6g588eg7102g89917173073b",
                                                    "type" : "TranslatedString",
-                                                   "version" : 8
+                                                   "version" : 9
                                                 },
                                                 "stub" : {"type" : "bool", "value" : true}
                                              }
@@ -1478,17 +1408,7 @@
                         ],
                         "Tags" : [ {} ],
                         "UUID" : {"type" : "FixedString", "value" : "add740d8-e471-4956-8e28-36012e9b9248"},
-                        "checkflags" : [
-                           {
-                              "flaggroup" : [
-                                 {
-                                    "flag" : [
-                                       {
-                                          "UUID" : {"type" : "FixedString", "value" : "6e4b66e9-0f72-5171-04ba-441108b45b0e"},"value" : {"type" : "bool", "value" : false}}
-                                    ],"type" : {"type" : "FixedString", "value" : "Global"}}
-                              ]
-                           }
-                        ],
+                        "checkflags" : [ {} ],
                         "children" : [
                            {
                               "child" : [
@@ -1649,7 +1569,7 @@
                                                 "TagText" : {
                                                    "handle" : "hc562b742gab2bg4731gb72ag0c952ac011ee",
                                                    "type" : "TranslatedString",
-                                                   "version" : 8
+                                                   "version" : 9
                                                 },
                                                 "stub" : {"type" : "bool", "value" : true}
                                              }
@@ -1662,17 +1582,7 @@
                         ],
                         "Tags" : [ {} ],
                         "UUID" : {"type" : "FixedString", "value" : "b3630f98-5ede-4019-8eac-b615ddc66f82"},
-                        "checkflags" : [
-                           {
-                              "flaggroup" : [
-                                 {
-                                    "flag" : [
-                                       {
-                                          "UUID" : {"type" : "FixedString", "value" : "6e4b66e9-0f72-5171-04ba-441108b45b0e"},"value" : {"type" : "bool", "value" : false}}
-                                    ],"type" : {"type" : "FixedString", "value" : "Global"}}
-                              ]
-                           }
-                        ],
+                        "checkflags" : [ {} ],
                         "children" : [
                            {
                               "child" : [
@@ -1835,7 +1745,7 @@
                                                 "TagText" : {
                                                    "handle" : "hab0c50b6g0d87gc7f5g7f17gffa6fe4491a0",
                                                    "type" : "TranslatedString",
-                                                   "version" : 8
+                                                   "version" : 9
                                                 },
                                                 "stub" : {"type" : "bool", "value" : true}
                                              }
@@ -1848,17 +1758,7 @@
                         ],
                         "Tags" : [ {} ],
                         "UUID" : {"type" : "FixedString", "value" : "ca390150-7119-4115-8f91-8eab81ee5442"},
-                        "checkflags" : [
-                           {
-                              "flaggroup" : [
-                                 {
-                                    "flag" : [
-                                       {
-                                          "UUID" : {"type" : "FixedString", "value" : "6e4b66e9-0f72-5171-04ba-441108b45b0e"},"value" : {"type" : "bool", "value" : false}}
-                                    ],"type" : {"type" : "FixedString", "value" : "Global"}}
-                              ]
-                           }
-                        ],
+                        "checkflags" : [ {} ],
                         "children" : [ {} ],
                         "constructor" : {"type" : "FixedString", "value" : "TagAnswer"},
                         "editorData" : [
@@ -2013,7 +1913,7 @@
                                                 "TagText" : {
                                                    "handle" : "h34f150c7gc3fbg9483g69acg68d4d7d1d729",
                                                    "type" : "TranslatedString",
-                                                   "version" : 8
+                                                   "version" : 9
                                                 },
                                                 "stub" : {"type" : "bool", "value" : true}
                                              }
@@ -2031,17 +1931,7 @@
                               "ValidatedHasValue" : {"type" : "bool", "value" : false}
                            }
                         ],
-                        "checkflags" : [
-                           {
-                              "flaggroup" : [
-                                 {
-                                    "flag" : [
-                                       {
-                                          "UUID" : {"type" : "FixedString", "value" : "6e4b66e9-0f72-5171-04ba-441108b45b0e"},"value" : {"type" : "bool", "value" : false}}
-                                    ],"type" : {"type" : "FixedString", "value" : "Global"}}
-                              ]
-                           }
-                        ],
+                        "checkflags" : [ {} ],
                         "children" : [
                            {
                               "child" : [
@@ -2202,7 +2092,7 @@
                                                 "TagText" : {
                                                    "handle" : "h52b696e4g626bg71degf272ge2f0f70aab26",
                                                    "type" : "TranslatedString",
-                                                   "version" : 8
+                                                   "version" : 9
                                                 },
                                                 "stub" : {"type" : "bool", "value" : true}
                                              }
@@ -2220,17 +2110,7 @@
                               "ValidatedHasValue" : {"type" : "bool", "value" : false}
                            }
                         ],
-                        "checkflags" : [
-                           {
-                              "flaggroup" : [
-                                 {
-                                    "flag" : [
-                                       {
-                                          "UUID" : {"type" : "FixedString", "value" : "6e4b66e9-0f72-5171-04ba-441108b45b0e"},"value" : {"type" : "bool", "value" : false}}
-                                    ],"type" : {"type" : "FixedString", "value" : "Global"}}
-                              ]
-                           }
-                        ],
+                        "checkflags" : [ {} ],
                         "children" : [
                            {
                               "child" : [
@@ -2391,7 +2271,7 @@
                                                 "TagText" : {
                                                    "handle" : "h33df1eacg957cga713gea7bg8f632c9eb27a",
                                                    "type" : "TranslatedString",
-                                                   "version" : 8
+                                                   "version" : 9
                                                 },
                                                 "stub" : {"type" : "bool", "value" : true}
                                              }
@@ -2409,17 +2289,7 @@
                               "ValidatedHasValue" : {"type" : "bool", "value" : false}
                            }
                         ],
-                        "checkflags" : [
-                           {
-                              "flaggroup" : [
-                                 {
-                                    "flag" : [
-                                       {
-                                          "UUID" : {"type" : "FixedString", "value" : "6e4b66e9-0f72-5171-04ba-441108b45b0e"},"value" : {"type" : "bool", "value" : false}}
-                                    ],"type" : {"type" : "FixedString", "value" : "Global"}}
-                              ]
-                           }
-                        ],
+                        "checkflags" : [ {} ],
                         "children" : [
                            {
                               "child" : [
@@ -2580,7 +2450,7 @@
                                                 "TagText" : {
                                                    "handle" : "h8a103bfeg188bgea38gbedfgaae27c690f14",
                                                    "type" : "TranslatedString",
-                                                   "version" : 8
+                                                   "version" : 9
                                                 },
                                                 "stub" : {"type" : "bool", "value" : true}
                                              }
@@ -2598,17 +2468,7 @@
                               "ValidatedHasValue" : {"type" : "bool", "value" : false}
                            }
                         ],
-                        "checkflags" : [
-                           {
-                              "flaggroup" : [
-                                 {
-                                    "flag" : [
-                                       {
-                                          "UUID" : {"type" : "FixedString", "value" : "6e4b66e9-0f72-5171-04ba-441108b45b0e"},"value" : {"type" : "bool", "value" : false}}
-                                    ],"type" : {"type" : "FixedString", "value" : "Global"}}
-                              ]
-                           }
-                        ],
+                        "checkflags" : [ {} ],
                         "children" : [
                            {
                               "child" : [
