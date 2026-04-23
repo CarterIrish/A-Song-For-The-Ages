@@ -51,6 +51,7 @@ _Count == 1
 THEN
 NOT DB_SFAGoblins(_Goblin);
 QuestUpdate("RIT_ASongForTheAges", "RIT_SpeakToDafodil_Step");
+SetFlag((FLAG)RIT_ACT1Complete_b472ec8a-b9d2-4ca1-8be5-b6e2d4b30616);
 EXITSECTION
 
 ENDEXITSECTION
