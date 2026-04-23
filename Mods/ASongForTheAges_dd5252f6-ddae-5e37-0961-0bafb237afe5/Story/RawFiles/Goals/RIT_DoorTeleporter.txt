@@ -4,12 +4,12 @@ INITSECTION
 
 KBSECTION
 IF
-UseFinished(_Player, RIT_CavePortal_d12a2eb6-add9-4e38-bd79-7fd444a6e789, 1)
+UseFinished(_Player, (ITEM)QUEST_UNI_CRE_DaisyCaveEntrance_001_1f12aeaf-511d-4197-8d54-2680f0204015, 1)
 THEN
 TeleportPartiesToLevelWithMovie("RIT_QuestStructure", "", "");
 
 IF
-UseFinished(_Player, QUEST_UNI_CRE_DaisyCaveEntrance_000_41b0c6c0-7e14-40ac-9993-fc54c60da626, 1)
+UseFinished(_Player, (ITEM)QUEST_UNI_CRE_DaisyCaveEntrance_000_41b0c6c0-7e14-40ac-9993-fc54c60da626, 1)
 THEN
 TeleportPartiesToLevelWithMovie("WLD_Main_A","","");
 
