@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="8" revision="0" build="500"/>
+    <region id="Layers">
+        <node id="root">
+            <children>
+                <node id="Layer">
+                    <attribute id="Object" type="guid" value="b5126105-1f9e-1f8d-2d78-f53eaf071962"/>
+                </node>
+                <node id="Layer">
+                    <attribute id="Object" type="guid" value="18e2a8ee-485f-99e2-ebae-f390b6fca402"/>
+                </node>
+            </children>
+        </node>
+    </region>
+    <region id="MetaData">
+        <node id="root">
+            <attribute id="ID" type="guid" value="6a37ce80-4c7c-567e-c1d5-40a8b3ebd8f7"/>
+            <attribute id="LayerColor" type="int32" value="0"/>
+            <attribute id="Name" type="LSString" value="Lighting"/>
+        </node>
+    </region>
+</save>
