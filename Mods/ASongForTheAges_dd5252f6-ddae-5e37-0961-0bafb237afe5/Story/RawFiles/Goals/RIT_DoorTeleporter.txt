@@ -4,7 +4,7 @@ INITSECTION
 
 KBSECTION
 IF
-UseFinished(_Player, RIT_CaveEntrance_e6c4cbd7-69a6-4e42-b010-46b93e069b2f, 1)
+UseFinished(_Player, RIT_CavePortal_d12a2eb6-add9-4e38-bd79-7fd444a6e789, 1)
 THEN
 TeleportPartiesToLevelWithMovie("RIT_QuestStructure", "", "");
 

@@ -24,7 +24,7 @@
                     <attribute id="FileSize" type="uint64" value="24716994"/>
                     <attribute id="Folder" type="LSString" value="ASongForTheAges_dd5252f6-ddae-5e37-0961-0bafb237afe5"/>
                     <attribute id="LobbyLevelName" type="FixedString" value=""/>
-                    <attribute id="MD5" type="LSString" value="5b89f3dae57ef3aab0ba5150dfd1d939"/>
+                    <attribute id="MD5" type="LSString" value="8f2fdee8707d78f853b0f24c30effa39"/>
                     <attribute id="MenuLevelName" type="FixedString" value=""/>
                     <attribute id="Name" type="LSString" value="A Song For The Ages"/>
                     <attribute id="NumPlayers" type="uint8" value="4"/>
@@ -32,7 +32,7 @@
                     <attribute id="PublishHandle" type="uint64" value="0"/>
                     <attribute id="StartupLevelName" type="FixedString" value=""/>
                     <attribute id="UUID" type="FixedString" value="dd5252f6-ddae-5e37-0961-0bafb237afe5"/>
-                    <attribute id="Version64" type="int64" value="36028797018963990"/>
+                    <attribute id="Version64" type="int64" value="36028797018963993"/>
                     <children>
                         <node id="PublishVersion">
                             <attribute id="Version64" type="int64" value="144255927718626661"/>
