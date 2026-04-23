@@ -24,6 +24,7 @@
                     <attribute id="FileSize" type="uint64" value="32966549"/>
                     <attribute id="Folder" type="LSString" value="ASongForTheAges_dd5252f6-ddae-5e37-0961-0bafb237afe5"/>
                     <attribute id="LobbyLevelName" type="FixedString" value=""/>
+                    <attribute id="MD5" type="LSString" value="bb65bd2a6a243d08947f758725f90ce2"/>
                     <attribute id="MenuLevelName" type="FixedString" value=""/>
                     <attribute id="Name" type="LSString" value="A Song For The Ages"/>
                     <attribute id="NumPlayers" type="uint8" value="4"/>
