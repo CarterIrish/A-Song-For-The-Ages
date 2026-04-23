@@ -4,11 +4,11 @@ INITSECTION
 
 KBSECTION
 IF
-EnteredTrigger(_Player, "")
+EnteredTrigger(_Player, (TRIGGER)RIT_Act2BossFight_EventTrigger_ca309c5a-d26a-45ff-a83b-22867c1e7fe0)
 AND
 DB_Players(_Player)
 THEN
-EnterCombat(_Player, 
+DebugText(_Player, (STRING)"Entered Trigger");
 EXITSECTION
 
 ENDEXITSECTION
