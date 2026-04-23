@@ -1,14 +1,36 @@
 Version 1
 SubGoalCombiner SGC_AND
 INITSECTION
-
+DB_Trexel((CHARACTER)RIT_BugBear_Trexel_000_65af110f-bb3e-40b4-ae00-a65216ecc6d3);
 KBSECTION
 IF
 EnteredTrigger(_Player, (TRIGGER)RIT_Act2BossFight_EventTrigger_ca309c5a-d26a-45ff-a83b-22867c1e7fe0)
 AND
 DB_Players(_Player)
+AND
+NOT DB_SFABossFightStarted(1)
 THEN
-DebugText(_Player, (STRING)"Entered Trigger");
+DB_SFABossFightStarted(1);
+QuestUpdate("RIT_ASongForTheAges", "RIT_FightTrexel_Step");
+PROC_RIT_StartBossFight(_Player);
+
+
+// Set each goblin's faction and force them into combat against the player
+PROC
+PROC_RIT_StartBossFight((CHARACTER)_Player)
+AND
+DB_Trexel(_Trexel)
+THEN
+SetRelationTemporaryHostile(_Trexel, _Player);
+EnterCombat(_Trexel, _Player);
+
+IF
+KilledBy(_Trexel, _AttackOwner, _Attacker, _StoryActionID)
+AND
+DB_Trexel(_Trexel)
+THEN
+QuestUpdate("RIT_ASongForTheAges", "RIT_ReturnToBrokenstring_Step");
+SetFlag((FLAG)RIT_Act2Complete_900089f7-8a25-c7fc-7082-77506ca661fd);
 EXITSECTION
 
 ENDEXITSECTION
