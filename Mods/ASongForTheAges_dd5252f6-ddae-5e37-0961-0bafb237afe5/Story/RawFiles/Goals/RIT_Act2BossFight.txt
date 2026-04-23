@@ -1,0 +1,15 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+
+KBSECTION
+IF
+EnteredTrigger(_Player, "")
+AND
+DB_Players(_Player)
+THEN
+EnterCombat(_Player, 
+EXITSECTION
+
+ENDEXITSECTION
+ParentTargetEdge "__Start"

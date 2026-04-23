@@ -7,12 +7,16 @@ IF
 UseFinished(_Player, DOOR_Single_Dungeon_Abbey_A_Teleporter_000_8a59a7fb-b325-44cb-9d0e-19ef1135db51, 1)
 THEN
 TeleportPartiesToLevelWithMovie("RIT_QuestStructure", "", "");
-QuestUpdate("RIT_ASongForTheAges", "RIT_SearchTheCavern_Step");
 
 IF
 UseFinished(_Player, QUEST_UNI_CRE_DaisyCaveEntrance_000_41b0c6c0-7e14-40ac-9993-fc54c60da626, 1)
 THEN
 TeleportPartiesToLevelWithMovie("WLD_Main_A","","");
+
+IF
+LevelLoaded("RIT_QuestStructure")
+THEN
+QuestUpdate("RIT_ASongForTheAges", "RIT_SearchTheCavern_Step");
 EXITSECTION
 
 ENDEXITSECTION
