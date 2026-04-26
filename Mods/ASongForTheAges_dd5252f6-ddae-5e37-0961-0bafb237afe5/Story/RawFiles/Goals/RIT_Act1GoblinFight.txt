@@ -1,8 +1,12 @@
 Version 1
 SubGoalCombiner SGC_AND
 INITSECTION
-DB_SFAGoblins((CHARACTER)RIT_GoblinGuard_000_ec6a16b8-b498-4055-8468-6dd74217f48e);
+DB_SFAGoblins((CHARACTER)RIT_GoblinBooyahg_000_01179a70-df8e-4b66-b5f0-a43bd73fb3fb);
+DB_SFAGoblins((CHARACTER)RIT_GoblinGuard_002_ec6a16b8-b498-4055-8468-6dd74217f48e);
 DB_SFAGoblins((CHARACTER)RIT_GoblinGuard_001_759e2b80-e185-425b-8712-0da04ff42efe);
+DB_SFAGoblins((CHARACTER)RIT_GoblinBrawler_000_d2334281-cfb2-4fe0-ab22-b87b69d35d46);
+DB_SFAGoblins((CHARACTER)RIT_GoblinTracker_000_a81af758-4806-474e-95eb-5a4767bc8532);
+DB_SFAGoblins((CHARACTER)RIT_GoblinBoss_000_ade8c356-46b5-46f9-9478-ad17acebc689);
 KBSECTION
 // Trigger combat when player enters the ambush zone
 IF

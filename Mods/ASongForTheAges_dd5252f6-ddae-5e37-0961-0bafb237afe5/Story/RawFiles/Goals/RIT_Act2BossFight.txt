@@ -1,8 +1,12 @@
 Version 1
 SubGoalCombiner SGC_AND
 INITSECTION
-DB_Trexel((CHARACTER)RIT_BugBear_Trexel_000_65af110f-bb3e-40b4-ae00-a65216ecc6d3);
+DB_FightEnemies((CHARACTER)RIT_BugBear_Trexel_000_65af110f-bb3e-40b4-ae00-a65216ecc6d3);
+DB_FightEnemies((CHARACTER)RIT_BossFight_Goblin_000_28d0baa5-3fcb-48df-8105-669b65810946);
+DB_FightEnemies((CHARACTER)RIT_BossFight_Goblin_001_a3da59f9-3995-43bf-9483-70972b5df5ae);
+DB_FightEnemies((CHARACTER)RIT_BossFight_Goblin_002_0e322ce7-e536-44fa-b4a8-cc56edcbaeb9);
 KBSECTION
+// Player walks into the trigger zone: start the fight
 IF
 EnteredTrigger(_Player, (TRIGGER)RIT_Act2BossFight_EventTrigger_ca309c5a-d26a-45ff-a83b-22867c1e7fe0)
 AND
@@ -14,23 +18,67 @@ DB_SFABossFightStarted(1);
 QuestUpdate("RIT_ASongForTheAges", "RIT_FightTrexel_Step");
 PROC_RIT_StartBossFight(_Player);
 
+IF
+EnteredTrigger(_Player, (TRIGGER)RIT_Act2BossFight_EventTrigger_ca309c5a-d26a-45ff-a83b-22867c1e7fe0)
+AND
+DB_FightEnemies(_Enemny)
+AND
+GetDisplayName(_Enemny, _translatedStringKey)
+AND
+ResolveTranslatedString(_translatedStringKey, _displayName)
+THEN
+DebugText(_Player, _displayName);
 
-// Set each goblin's faction and force them into combat against the player
+
 PROC
 PROC_RIT_StartBossFight((CHARACTER)_Player)
 AND
-DB_Trexel(_Trexel)
-THEN
-SetRelationTemporaryHostile(_Trexel, _Player);
-EnterCombat(_Trexel, _Player);
-
-IF
-KilledBy(_Trexel, _AttackOwner, _Attacker, _StoryActionID)
+DB_FightEnemies(_Enemy)
 AND
-DB_Trexel(_Trexel)
+GetFaction(_Player, _PlayerFaction)
+AND
+GetFaction(_Enemy, _EnemyFaction)
 THEN
+SetHostileAndEnterCombat(_EnemyFaction, _PlayerFaction, _Enemy, _Player);
+
+
+// Non-last enemy dies: remove from tracking
+IF
+KilledBy(_Enemy, _AttackOwner, _Attacker, _StoryActionID)
+AND
+DB_FightEnemies(_Enemy)
+AND
+SysCount("DB_FightEnemies", 1, _Count)
+AND
+_Count > 1
+THEN
+NOT DB_FightEnemies(_Enemy);
+
+
+// Last enemy dies: advance quest to claim the lute
+IF
+KilledBy(_Enemy, _AttackOwner, _Attacker, _StoryActionID)
+AND
+DB_FightEnemies(_Enemy)
+AND
+SysCount("DB_FightEnemies", 1, _Count)
+AND
+_Count == 1
+THEN
+NOT DB_FightEnemies(_Enemy);
+QuestUpdate("RIT_ASongForTheAges", "RIT_ClaimTheLute_Step");
+
+
+// Player picks up the lute: advance quest to return to Dafodil
+IF
+TemplateAddedTo((ITEMROOT)RIT_Dafodills_Lute_e09c7e42-978f-4f54-b321-28748365d627, _LuteInst, _Holder, _AddType)
+AND
+DB_Players((CHARACTER)_Holder)
+AND
+NOT DB_SFALuteClaimed(1)
+THEN
+DB_SFALuteClaimed(1);
 QuestUpdate("RIT_ASongForTheAges", "RIT_ReturnToBrokenstring_Step");
-SetFlag((FLAG)RIT_Act2Complete_900089f7-8a25-c7fc-7082-77506ca661fd);
 EXITSECTION
 
 ENDEXITSECTION

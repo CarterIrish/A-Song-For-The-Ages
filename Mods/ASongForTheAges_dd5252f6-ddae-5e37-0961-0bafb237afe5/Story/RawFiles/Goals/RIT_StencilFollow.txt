@@ -1,0 +1,16 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+
+KBSECTION
+IF
+FlagSet((FLAG)RIT_SFA_Started_6a2c7619-b1eb-28af-7fa7-300277b0b2da, _Speaker, _DialogInstance)
+AND
+DB_Players(_Player)
+THEN
+Follow((CHARACTER)RIT_DafodilBrokenstring_000_f0fb08ae-9129-4335-b4b0-4c0680c4010f, _Player);
+DebugText(_Player, "Sten Follows");
+EXITSECTION
+
+ENDEXITSECTION
+ParentTargetEdge "__Start"
