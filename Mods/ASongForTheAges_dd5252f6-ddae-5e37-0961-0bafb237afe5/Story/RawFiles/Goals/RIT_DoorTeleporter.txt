@@ -3,20 +3,36 @@ SubGoalCombiner SGC_AND
 INITSECTION
 
 KBSECTION
+// Enter the cave
 IF
 UseFinished(_Player, (ITEM)QUEST_UNI_CRE_DaisyCaveEntrance_001_1f12aeaf-511d-4197-8d54-2680f0204015, 1)
 THEN
 TeleportPartiesToLevelWithMovie("RIT_QuestStructure", "", "");
 
-IF
-UseFinished(_Player, (ITEM)QUEST_UNI_CRE_DaisyCaveEntrance_000_41b0c6c0-7e14-40ac-9993-fc54c60da626, 1)
-THEN
-TeleportPartiesToLevelWithMovie("WLD_Main_A","","");
-
+// Update quest on cave level load
 IF
 LevelLoaded("RIT_QuestStructure")
 THEN
 QuestUpdate("RIT_ASongForTheAges", "RIT_SearchTheCavern_Step");
+
+// Exit the cave back to main
+IF
+UseFinished(_Player, (ITEM)QUEST_UNI_CRE_DaisyCaveEntrance_000_41b0c6c0-7e14-40ac-9993-fc54c60da626, 1)
+AND
+NOT DB_SFAReturnedToMain(1)
+THEN
+DB_SFAReturnedToMain(1);
+TeleportPartiesToLevelWithMovie("WLD_Main_A", "", "");
+
+// Snap party to cave entrance on main level load
+IF
+LevelLoaded("WLD_Main_A")
+AND
+DB_SFAReturnedToMain(1)
+AND
+DB_Players(_Player)
+THEN
+TeleportTo(_Player, (GUIDSTRING)RIT_LoadTarget_f0a1bd9c-1788-4dfe-89a5-816244f0d83e, "", 1, 1, 1, 0, 1);
 EXITSECTION
 
 ENDEXITSECTION
