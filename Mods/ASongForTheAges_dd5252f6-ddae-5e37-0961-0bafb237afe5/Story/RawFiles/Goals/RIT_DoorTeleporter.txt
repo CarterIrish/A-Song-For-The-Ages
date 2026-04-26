@@ -33,6 +33,7 @@ AND
 DB_Players(_Player)
 THEN
 TeleportTo(_Player, (GUIDSTRING)RIT_LoadTarget_f0a1bd9c-1788-4dfe-89a5-816244f0d83e, "", 1, 1, 1, 0, 1);
+QuestUpdate("RIT_ASongForTheAges", "RIT_SpeakToBrokenstring_Step");
 EXITSECTION
 
 ENDEXITSECTION

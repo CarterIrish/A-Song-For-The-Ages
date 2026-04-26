@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="8" revision="0" build="500"/>
+    <region id="FactionContainer">
+        <node id="root">
+            <children>
+                <node id="Faction">
+                    <attribute id="Faction" type="FixedString" value="SFA_TrexelsMinions"/>
+                    <attribute id="ParentGuid" type="guid" value="4be9261a-e481-8d9d-3528-f36956a19b17"/>
+                    <attribute id="UUID" type="guid" value="8337ad9e-edb8-43ae-8c66-d12fa0bae305"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

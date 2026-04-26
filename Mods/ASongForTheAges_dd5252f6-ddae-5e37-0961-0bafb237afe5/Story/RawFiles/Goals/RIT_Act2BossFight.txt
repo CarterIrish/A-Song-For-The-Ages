@@ -36,10 +36,8 @@ AND
 DB_FightEnemies(_Enemy)
 AND
 GetFaction(_Player, _PlayerFaction)
-AND
-GetFaction(_Enemy, _EnemyFaction)
 THEN
-SetHostileAndEnterCombat(_EnemyFaction, _PlayerFaction, _Enemy, _Player);
+SetHostileAndEnterCombat((FACTION)SFA_TrexelsMinions_8337ad9e-edb8-43ae-8c66-d12fa0bae305, _PlayerFaction, _Enemy, _Player);
 
 
 // Non-last enemy dies: remove from tracking
