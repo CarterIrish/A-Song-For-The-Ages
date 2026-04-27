@@ -232,7 +232,7 @@
                             <attribute id="RewardAdditionalOwnerName" type="LSString" value=""/>
                             <attribute id="RewardAdditionalTreasureTable" type="FixedString" value=""/>
                             <attribute id="StatTriggerGUID" type="guid" value="00000000-0000-0000-0000-000000000000"/>
-                            <attribute id="UnlockDisable" type="int32" value="2"/>
+                            <attribute id="UnlockDisable" type="int32" value="0"/>
                         </node>
                     </children>
                 </node>

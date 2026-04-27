@@ -18,18 +18,7 @@ DB_SFABossFightStarted(1);
 QuestUpdate("RIT_ASongForTheAges", "RIT_FightTrexel_Step");
 PROC_RIT_StartBossFight(_Player);
 
-IF
-EnteredTrigger(_Player, (TRIGGER)RIT_Act2BossFight_EventTrigger_ca309c5a-d26a-45ff-a83b-22867c1e7fe0)
-AND
-DB_FightEnemies(_Enemny)
-AND
-GetDisplayName(_Enemny, _translatedStringKey)
-AND
-ResolveTranslatedString(_translatedStringKey, _displayName)
-THEN
-DebugText(_Player, _displayName);
-
-
+// Set Relations and begin fight.
 PROC
 PROC_RIT_StartBossFight((CHARACTER)_Player)
 AND
@@ -67,20 +56,22 @@ GetFaction(_Enemy, _EnemyFaction)
 THEN
 NOT DB_FightEnemies(_Enemy);
 QuestUpdate("RIT_ASongForTheAges", "RIT_ClaimTheLute_Step");
-ClearIndividualRelation((CHARACTER)RIT_DafodilBrokenstring_000_f0fb08ae-9129-4335-b4b0-4c0680c4010f, _EnemyFaction);
 
 
-// Player picks up the lute: advance quest to return to Dafodil
 IF
 TemplateAddedTo((ITEMROOT)RIT_Dafodills_Lute_e09c7e42-978f-4f54-b321-28748365d627, _LuteInst, _Holder, _AddType)
 AND
 DB_Players((CHARACTER)_Holder)
 AND
 NOT DB_SFALuteClaimed(1)
+AND
+GetFlagName((FLAG)RIT_Act2Complete_900089f7-8a25-c7fc-7082-77506ca661fd, _FlagName)
 THEN
 DB_SFALuteClaimed(1);
-SetFlag((FLAG)RIT_Act2Complete_900089f7-8a25-c7fc-7082-77506ca661fd, _Holder, 0, 1);
+SetFlag((FLAG)RIT_Act2Complete_900089f7-8a25-c7fc-7082-77506ca661fd);
 QuestUpdate("RIT_ASongForTheAges", "RIT_ReturnToBrokenstring_Step");
+DebugLog(_FlagName);
+DebugText(_Holder, "Lute claimed - flag set");
 EXITSECTION
 
 ENDEXITSECTION
