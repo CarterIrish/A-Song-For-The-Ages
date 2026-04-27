@@ -24,7 +24,7 @@ THEN
 DB_SFAReturnedToMain(1);
 TeleportPartiesToLevelWithMovie("WLD_Main_A", "", "");
 
-// Snap party to cave entrance on main level load
+// Snap party to cave exit on main level load
 IF
 LevelLoaded("WLD_Main_A")
 AND
@@ -33,6 +33,15 @@ AND
 DB_Players(_Player)
 THEN
 TeleportTo(_Player, (GUIDSTRING)RIT_LoadTarget_f0a1bd9c-1788-4dfe-89a5-816244f0d83e, "", 1, 1, 1, 0, 1);
+
+// Quest update fires after the teleport lands them at the trigger
+IF
+EnteredTrigger(_Player, (TRIGGER)RIT_LoadTarget_f0a1bd9c-1788-4dfe-89a5-816244f0d83e)
+AND
+DB_Players(_Player)
+AND
+DB_SFAReturnedToMain(1)
+THEN
 QuestUpdate("RIT_ASongForTheAges", "RIT_SpeakToBrokenstring_Step");
 EXITSECTION
 

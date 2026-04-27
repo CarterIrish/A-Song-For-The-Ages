@@ -79,6 +79,7 @@ AND
 NOT DB_SFALuteClaimed(1)
 THEN
 DB_SFALuteClaimed(1);
+SetFlag((FLAG)RIT_Act2Complete_900089f7-8a25-c7fc-7082-77506ca661fd, _Holder, 0, 1);
 QuestUpdate("RIT_ASongForTheAges", "RIT_ReturnToBrokenstring_Step");
 EXITSECTION
 
