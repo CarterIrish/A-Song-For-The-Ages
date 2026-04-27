@@ -21,10 +21,10 @@
                     <attribute id="Author" type="LSString" value="MF Tadpoles"/>
                     <attribute id="CharacterCreationLevelName" type="FixedString" value=""/>
                     <attribute id="Description" type="LSString" value="A Baldurs Gate 3 Story Quest mod about a bard&apos;s journey to find the greatest song of all time."/>
-                    <attribute id="FileSize" type="uint64" value="30897592"/>
+                    <attribute id="FileSize" type="uint64" value="33006041"/>
                     <attribute id="Folder" type="LSString" value="ASongForTheAges_dd5252f6-ddae-5e37-0961-0bafb237afe5"/>
                     <attribute id="LobbyLevelName" type="FixedString" value=""/>
-                    <attribute id="MD5" type="LSString" value="ebe716de3e26b2b02f4f410b73c27374"/>
+                    <attribute id="MD5" type="LSString" value="cfb1a4802bd527493f9680bf947194bd"/>
                     <attribute id="MenuLevelName" type="FixedString" value=""/>
                     <attribute id="Name" type="LSString" value="A Song For The Ages"/>
                     <attribute id="NumPlayers" type="uint8" value="4"/>
@@ -32,7 +32,7 @@
                     <attribute id="PublishHandle" type="uint64" value="0"/>
                     <attribute id="StartupLevelName" type="FixedString" value=""/>
                     <attribute id="UUID" type="FixedString" value="dd5252f6-ddae-5e37-0961-0bafb237afe5"/>
-                    <attribute id="Version64" type="int64" value="36028797018964007"/>
+                    <attribute id="Version64" type="int64" value="36028797018964008"/>
                     <children>
                         <node id="PublishVersion">
                             <attribute id="Version64" type="int64" value="144255927718626661"/>
