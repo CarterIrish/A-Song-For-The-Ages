@@ -62,9 +62,12 @@ AND
 SysCount("DB_FightEnemies", 1, _Count)
 AND
 _Count == 1
+AND
+GetFaction(_Enemy, _EnemyFaction)
 THEN
 NOT DB_FightEnemies(_Enemy);
 QuestUpdate("RIT_ASongForTheAges", "RIT_ClaimTheLute_Step");
+ClearIndividualRelation((CHARACTER)RIT_DafodilBrokenstring_000_f0fb08ae-9129-4335-b4b0-4c0680c4010f, _EnemyFaction);
 
 
 // Player picks up the lute: advance quest to return to Dafodil
