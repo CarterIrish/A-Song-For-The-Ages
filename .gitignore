@@ -2,6 +2,10 @@
 ##########################
 SourceControlGenerator.json
 
+# BG3 toolkit junction folder #
+################################
+Projects/
+
 # Levels
 ######################
 #Mods/ASongForTheAges_dd5252f6-ddae-5e37-0961-0bafb237afe5/Levels/*
@@ -116,3 +120,4 @@ ehthumbs.db
 Thumbs.db
 *.lnk
 
+bg3-setup.config.json

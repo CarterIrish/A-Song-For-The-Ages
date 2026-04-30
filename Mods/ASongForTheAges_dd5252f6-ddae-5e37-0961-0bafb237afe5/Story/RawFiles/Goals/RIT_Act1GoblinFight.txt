@@ -1,0 +1,62 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+DB_SFAGoblins((CHARACTER)RIT_GoblinBooyahg_000_01179a70-df8e-4b66-b5f0-a43bd73fb3fb);
+DB_SFAGoblins((CHARACTER)RIT_GoblinGuard_002_ec6a16b8-b498-4055-8468-6dd74217f48e);
+DB_SFAGoblins((CHARACTER)RIT_GoblinGuard_001_759e2b80-e185-425b-8712-0da04ff42efe);
+DB_SFAGoblins((CHARACTER)RIT_GoblinBrawler_000_d2334281-cfb2-4fe0-ab22-b87b69d35d46);
+DB_SFAGoblins((CHARACTER)RIT_GoblinTracker_000_a81af758-4806-474e-95eb-5a4767bc8532);
+DB_SFAGoblins((CHARACTER)RIT_GoblinBoss_000_ade8c356-46b5-46f9-9478-ad17acebc689);
+KBSECTION
+// Trigger combat when player enters the ambush zone
+IF
+EnteredTrigger(_Player, (TRIGGER)RIT_GoblinFight_Act1_EventTrigger_7948f6aa-976c-485c-890b-1d90b1d3c94b)
+AND
+DB_Players(_Player)
+AND
+NOT DB_SFAGoblinFightStarted(1)
+THEN
+DB_SFAGoblinFightStarted(1);
+QuestUpdate("RIT_ASongForTheAges", "RIT_KillGoblins_Step");
+PROC_RIT_StartGoblinFight(_Player);
+
+// Set each goblin's faction and force them into combat against the player
+PROC
+PROC_RIT_StartGoblinFight((CHARACTER)_Player)
+AND
+DB_SFAGoblins(_Goblin)
+AND
+GetFaction(_Player, _PlayerFaction)
+THEN
+SetIndividualRelation(_Goblin, _PlayerFaction, 0);
+EnterCombat(_Goblin, _Player);
+
+// Remove non-last goblins from tracking on death
+IF
+KilledBy(_Goblin, _AttackOwner, _Attacker, _StoryActionID)
+AND
+DB_SFAGoblins(_Goblin)
+AND
+SysCount("DB_SFAGoblins", 1, _Count)
+AND
+_Count > 1
+THEN
+NOT DB_SFAGoblins(_Goblin);
+
+// Last goblin dead: advance quest and unlock the marker pointing to Dafodil
+IF
+KilledBy(_Goblin, _AttackOwner, _Attacker, _StoryActionID)
+AND
+DB_SFAGoblins(_Goblin)
+AND
+SysCount("DB_SFAGoblins", 1, _Count)
+AND
+_Count == 1
+THEN
+NOT DB_SFAGoblins(_Goblin);
+QuestUpdate("RIT_ASongForTheAges", "RIT_SpeakToDafodil_Step");
+SetFlag((FLAG)RIT_ACT1Complete_b472ec8a-b9d2-4ca1-8be5-b6e2d4b30616);
+EXITSECTION
+
+ENDEXITSECTION
+ParentTargetEdge "__Start"

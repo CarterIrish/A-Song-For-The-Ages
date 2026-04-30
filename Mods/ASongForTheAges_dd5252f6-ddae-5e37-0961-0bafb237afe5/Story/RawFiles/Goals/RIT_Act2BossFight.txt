@@ -1,0 +1,78 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+DB_FightEnemies((CHARACTER)RIT_BugBear_Trexel_000_65af110f-bb3e-40b4-ae00-a65216ecc6d3);
+DB_FightEnemies((CHARACTER)RIT_BossFight_Goblin_000_28d0baa5-3fcb-48df-8105-669b65810946);
+DB_FightEnemies((CHARACTER)RIT_BossFight_Goblin_001_a3da59f9-3995-43bf-9483-70972b5df5ae);
+DB_FightEnemies((CHARACTER)RIT_BossFight_Goblin_002_0e322ce7-e536-44fa-b4a8-cc56edcbaeb9);
+KBSECTION
+// Player walks into the trigger zone: start the fight
+IF
+EnteredTrigger(_Player, (TRIGGER)RIT_Act2BossFight_EventTrigger_ca309c5a-d26a-45ff-a83b-22867c1e7fe0)
+AND
+DB_Players(_Player)
+AND
+NOT DB_SFABossFightStarted(1)
+THEN
+DB_SFABossFightStarted(1);
+QuestUpdate("RIT_ASongForTheAges", "RIT_FightTrexel_Step");
+PROC_RIT_StartBossFight(_Player);
+
+// Set Relations and begin fight.
+PROC
+PROC_RIT_StartBossFight((CHARACTER)_Player)
+AND
+DB_FightEnemies(_Enemy)
+AND
+GetFaction(_Player, _PlayerFaction)
+THEN
+SetHostileAndEnterCombat((FACTION)SFA_TrexelsMinions_8337ad9e-edb8-43ae-8c66-d12fa0bae305, _PlayerFaction, _Enemy, _Player);
+
+
+// Non-last enemy dies: remove from tracking
+IF
+KilledBy(_Enemy, _AttackOwner, _Attacker, _StoryActionID)
+AND
+DB_FightEnemies(_Enemy)
+AND
+SysCount("DB_FightEnemies", 1, _Count)
+AND
+_Count > 1
+THEN
+NOT DB_FightEnemies(_Enemy);
+
+
+// Last enemy dies: advance quest to claim the lute
+IF
+KilledBy(_Enemy, _AttackOwner, _Attacker, _StoryActionID)
+AND
+DB_FightEnemies(_Enemy)
+AND
+SysCount("DB_FightEnemies", 1, _Count)
+AND
+_Count == 1
+AND
+GetFaction(_Enemy, _EnemyFaction)
+THEN
+NOT DB_FightEnemies(_Enemy);
+QuestUpdate("RIT_ASongForTheAges", "RIT_ClaimTheLute_Step");
+
+
+IF
+TemplateAddedTo((ITEMROOT)RIT_Dafodills_Lute_e09c7e42-978f-4f54-b321-28748365d627, _LuteInst, _Holder, _AddType)
+AND
+DB_Players((CHARACTER)_Holder)
+AND
+NOT DB_SFALuteClaimed(1)
+AND
+GetFlagName((FLAG)RIT_Act2Complete_900089f7-8a25-c7fc-7082-77506ca661fd, _FlagName)
+THEN
+DB_SFALuteClaimed(1);
+SetFlag((FLAG)RIT_Act2Complete_900089f7-8a25-c7fc-7082-77506ca661fd);
+QuestUpdate("RIT_ASongForTheAges", "RIT_ReturnToBrokenstring_Step");
+DebugLog(_FlagName);
+DebugText(_Holder, "Lute claimed - flag set");
+EXITSECTION
+
+ENDEXITSECTION
+ParentTargetEdge "__Start"
