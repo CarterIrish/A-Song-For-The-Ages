@@ -1,0 +1,21 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+DB_SFA_QuestReward((ITEMROOT)RIT_QuestReward_9978b032-5744-4880-8e85-6e6c1fe480eb);
+KBSECTION
+IF
+FlagSet((FLAG)RIT_SFAComplete_bcf20bf1-ba15-d502-e8be-230e46ffc58a, _Speaker, _DialogInstance)
+AND
+DB_Players(_Player)
+AND
+DB_SFA_QuestReward(_Template)
+AND
+NOT DB_SFA_RewardGranted(1)
+THEN
+DB_SFA_RewardGranted(1);
+TemplateAddTo(_Template, _Player, 1, 1);
+DebugText(_Player, "Amulet Granted");
+EXITSECTION
+
+ENDEXITSECTION
+ParentTargetEdge "__Start"
