@@ -214,14 +214,14 @@
                         </node>
                         <node id="QuestStep">
                             <attribute id="Achievement" type="FixedString" value=""/>
-                            <attribute id="Description" type="TranslatedString" handle="he04f6209gfa26gf4f1g89e7gfce0be24f1b2" version="2"/>
+                            <attribute id="Description" type="TranslatedString" handle="he04f6209gfa26gf4f1g89e7gfce0be24f1b2" version="4"/>
                             <attribute id="DevComment" type="FixedString" value=""/>
                             <attribute id="DialogFlagGUID" type="guid" value="1c58bf71-4b72-4263-ad58-1366fe105c60"/>
                             <attribute id="ExperienceReward" type="guid" value="00000000-0000-0000-0000-000000000000"/>
                             <attribute id="ID" type="FixedString" value="RIT_SpeakToBrokenstring_Step"/>
                             <attribute id="LevelOverride" type="int32" value="0"/>
                             <attribute id="Objective" type="FixedString" value="Return to Dafodil Brokenstring"/>
-                            <attribute id="QuestRewardCount" type="int32" value="0"/>
+                            <attribute id="QuestRewardCount" type="int32" value="1"/>
                             <attribute id="QuestRewardLevel" type="int32" value="0"/>
                             <attribute id="QuestStepGuid" type="guid" value="687990c1-36f9-4ead-8df9-18b3e7f93e0a"/>
                             <attribute id="QuestTitleOverride" type="TranslatedString" handle="ls::TranslatedStringRepository::s_HandleUnknown" version="0"/>
@@ -233,6 +233,11 @@
                             <attribute id="RewardAdditionalTreasureTable" type="FixedString" value=""/>
                             <attribute id="StatTriggerGUID" type="guid" value="00000000-0000-0000-0000-000000000000"/>
                             <attribute id="UnlockDisable" type="int32" value="0"/>
+                            <children>
+                                <node id="QuestRewardTables">
+                                    <attribute id="QuestRewardTables" type="FixedString" value="Valuables_Jewelry"/>
+                                </node>
+                            </children>
                         </node>
                     </children>
                 </node>
