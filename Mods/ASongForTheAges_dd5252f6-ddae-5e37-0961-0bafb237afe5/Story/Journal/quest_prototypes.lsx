@@ -221,21 +221,28 @@
                             <attribute id="ID" type="FixedString" value="RIT_SpeakToBrokenstring_Step"/>
                             <attribute id="LevelOverride" type="int32" value="0"/>
                             <attribute id="Objective" type="FixedString" value="Return to Dafodil Brokenstring"/>
-                            <attribute id="QuestRewardCount" type="int32" value="1"/>
+                            <attribute id="QuestRewardCount" type="int32" value="0"/>
                             <attribute id="QuestRewardLevel" type="int32" value="0"/>
                             <attribute id="QuestStepGuid" type="guid" value="687990c1-36f9-4ead-8df9-18b3e7f93e0a"/>
                             <attribute id="QuestTitleOverride" type="TranslatedString" handle="ls::TranslatedStringRepository::s_HandleUnknown" version="0"/>
                             <attribute id="ReputationGain" type="int32" value="0"/>
                             <attribute id="RewardAdditionalGold " type="guid" value="00000000-0000-0000-0000-000000000000"/>
-                            <attribute id="RewardAdditionalOwnerGUID" type="guid" value="00000000-0000-0000-0000-000000000000"/>
-                            <attribute id="RewardAdditionalOwnerLevelName" type="LSString" value=""/>
-                            <attribute id="RewardAdditionalOwnerName" type="LSString" value=""/>
+                            <attribute id="RewardAdditionalOwnerGUID" type="guid" value="f0fb08ae-9129-4335-b4b0-4c0680c4010f"/>
+                            <attribute id="RewardAdditionalOwnerLevelName" type="LSString" value="WLD_Main_A"/>
+                            <attribute id="RewardAdditionalOwnerName" type="LSString" value="RIT_DafodilBrokenstring_000"/>
                             <attribute id="RewardAdditionalTreasureTable" type="FixedString" value=""/>
                             <attribute id="StatTriggerGUID" type="guid" value="00000000-0000-0000-0000-000000000000"/>
                             <attribute id="UnlockDisable" type="int32" value="0"/>
                             <children>
-                                <node id="QuestRewardTables">
-                                    <attribute id="QuestRewardTables" type="FixedString" value="Valuables_Jewelry"/>
+                                <node id="RewardTemplateDescriptions">
+                                    <children>
+                                        <node id="RewardTemplateDescription">
+                                            <attribute id="RewardTemplateDescriptionGUID" type="guid" value="9978b032-5744-4880-8e85-6e6c1fe480eb"/>
+                                            <attribute id="RewardTemplateDescriptionIsRootTemplate" type="bool" value="true"/>
+                                            <attribute id="RewardTemplateDescriptionLevelName" type="LSString" value=""/>
+                                            <attribute id="RewardTemplateDescriptionName" type="LSString" value="RIT_QuestReward"/>
+                                        </node>
+                                    </children>
                                 </node>
                             </children>
                         </node>
