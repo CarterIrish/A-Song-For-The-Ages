@@ -70,11 +70,13 @@ try {
     $null = New-Item -ItemType Directory -Force -Path "$BG3DataPath\Mods"
     $null = New-Item -ItemType Directory -Force -Path "$BG3DataPath\Editor\Mods"
     $null = New-Item -ItemType Directory -Force -Path "$BG3DataPath\Public"
+    $null = New-Item -ItemType Directory -Force -Path "$BG3DataPath\Projects"
 
     $sources = @{
         "Mods\$ModUUID"        = "$BG3DataPath\Mods\"
         "Editor\Mods\$ModUUID" = "$BG3DataPath\Editor\Mods\"
         "Public\$ModUUID"      = "$BG3DataPath\Public\"
+        "Projects\$ModUUID"    = "$BG3DataPath\Projects\"
     }
 
     foreach ($source in $sources.Keys) {
@@ -106,6 +108,7 @@ try {
         "Mods\$ModUUID"        = "$BG3DataPath\Mods\$ModUUID"
         "Editor\Mods\$ModUUID" = "$BG3DataPath\Editor\Mods\$ModUUID"
         "Public\$ModUUID"      = "$BG3DataPath\Public\$ModUUID"
+        "Projects\$ModUUID"    = "$BG3DataPath\Projects\$ModUUID"
     }
 
     foreach ($folder in $foldersToRemove.Keys) {
@@ -140,6 +143,7 @@ try {
         "Mods\$ModUUID"        = "$BG3DataPath\Mods\$ModUUID"
         "Editor\Mods\$ModUUID" = "$BG3DataPath\Editor\Mods\$ModUUID"
         "Public\$ModUUID"      = "$BG3DataPath\Public\$ModUUID"
+        "Projects\$ModUUID"    = "$BG3DataPath\Projects\$ModUUID"
     }
 
     foreach ($link in $junctions.Keys) {
@@ -168,16 +172,19 @@ Write-Host "`n[Step 4/4] Verifying Setup..." -ForegroundColor Cyan
 $modsJunction = Get-Item "Mods\$ModUUID"
 $editorJunction = Get-Item "Editor\Mods\$ModUUID"
 $publicJunction = Get-Item "Public\$ModUUID"
+$projectsJunction = Get-Item "Projects\$ModUUID"
 
 if ($modsJunction.LinkType -eq "Junction" -and
     $editorJunction.LinkType -eq "Junction" -and
-    $publicJunction.LinkType -eq "Junction") {
+    $publicJunction.LinkType -eq "Junction" -and
+    $projectsJunction.LinkType -eq "Junction") {
 
     Write-Host "`nSuccess! All junctions were created properly" -ForegroundColor Green
     Write-Host "`nJunction Details:" -ForegroundColor Gray
     Write-Host "  Mods     -> $($modsJunction.Target)" -ForegroundColor Gray
     Write-Host "  Editor   -> $($editorJunction.Target)" -ForegroundColor Gray
     Write-Host "  Public   -> $($publicJunction.Target)" -ForegroundColor Gray
+    Write-Host "  Projects -> $($projectsJunction.Target)" -ForegroundColor Gray
 
     Write-Host "`nNext Steps:" -ForegroundColor Cyan
     Write-Host "  1. Open BG3 Toolkit - you should see 'ASongForTheAges' in your mod list" -ForegroundColor White
